@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<dsBaza xmlns="http://tempuri.org/dsBaza.xsd">
+  <TEn>
+    <wyraz>word</wyraz>
+    <znaczenie>słowo</znaczenie>
+    <typ>inne</typ>
+    <kategoria>System.Data.DataRowView</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>and</wyraz>
+    <znaczenie>i</znaczenie>
+    <typ>inne</typ>
+    <kategoria>inne</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>sd</wyraz>
+    <znaczenie>sdfsd</znaczenie>
+    <typ>czasownik frazowy</typ>
+    <kategoria>inne</kategoria>
+  </TEn>
+  <TKategorie>
+    <kategoria>inne</kategoria>
+  </TKategorie>
+  <TKategorie>
+    <kategoria>nowa</kategoria>
+  </TKategorie>
+</dsBaza>
