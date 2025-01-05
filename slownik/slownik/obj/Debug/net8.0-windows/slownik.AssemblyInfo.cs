@@ -11,10 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("slownik")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Tomasz Izydorczyk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7444a94502b107d3fac23381d537c9023caa9dc0")]
 [assembly: System.Reflection.AssemblyProductAttribute("slownik")]
 [assembly: System.Reflection.AssemblyTitleAttribute("slownik")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -38,6 +38,9 @@ namespace slownik
                 MessageBox.Show(this, "Pomyślnie dodano słowo do bazy!", "Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtWyraz.Clear();
                 txtZnaczenie.Clear();
+            }else
+            {
+                MessageBox.Show(this,"Podane słowo już istnieje w bazie!","Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

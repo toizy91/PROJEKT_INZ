@@ -6,6 +6,10 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Company>Tomasz Izydorczyk</Company>
+    <Authors>Tomasz Izydorczyk</Authors>
+    <Title>Słownik języka angielskiego i niemieckiego</Title>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

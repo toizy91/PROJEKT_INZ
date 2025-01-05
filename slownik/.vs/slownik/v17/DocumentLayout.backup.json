@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\dodajslowoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\dodajslowoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\dodajslowoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\dodajslowoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\ds_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\ds_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\dodslownie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\dodslownie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\ds_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\ds_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\dodslownie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\dodslownie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\dsbaza.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
       "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\dsbaza.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,60 +30,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dodajSlowoForm.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodajSlowoForm.cs",
-              "RelativeDocumentMoniker": "slownik\\dodajSlowoForm.cs",
-              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodajSlowoForm.cs",
-              "RelativeToolTip": "slownik\\dodajSlowoForm.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwDMAAAANAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "dodSlowNIe.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodSlowNIe.cs",
+              "RelativeDocumentMoniker": "slownik\\dodSlowNIe.cs",
+              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodSlowNIe.cs",
+              "RelativeToolTip": "slownik\\dodSlowNIe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:55:12.928Z",
+              "WhenOpened": "2025-01-05T14:05:24.385Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dodajSlowoForm.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodajSlowoForm.cs",
-              "RelativeDocumentMoniker": "slownik\\dodajSlowoForm.cs",
-              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodajSlowoForm.cs [Projekt]",
-              "RelativeToolTip": "slownik\\dodajSlowoForm.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:49:06.006Z",
-              "EditorCaption": " [Projekt]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DS_form.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\DS_form.cs",
-              "RelativeDocumentMoniker": "slownik\\DS_form.cs",
-              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\DS_form.cs",
-              "RelativeToolTip": "slownik\\DS_form.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
+              "Title": "dodSlowNIe.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodSlowNIe.cs",
+              "RelativeDocumentMoniker": "slownik\\dodSlowNIe.cs",
+              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodSlowNIe.cs [Projekt]",
+              "RelativeToolTip": "slownik\\dodSlowNIe.cs [Projekt]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:45:04.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T14:05:22.069Z",
+              "EditorCaption": " [Projekt]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DS_form.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\DS_form.cs",
-              "RelativeDocumentMoniker": "slownik\\DS_form.cs",
-              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\DS_form.cs [Projekt]",
-              "RelativeToolTip": "slownik\\DS_form.cs [Projekt]",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs",
+              "RelativeDocumentMoniker": "slownik\\Form1.cs",
+              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs [Projekt]",
+              "RelativeToolTip": "slownik\\Form1.cs [Projekt]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:40:31.673Z",
+              "WhenOpened": "2025-01-03T15:36:32.444Z",
               "EditorCaption": " [Projekt]"
             },
             {
@@ -99,20 +78,21 @@
               "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dsBaza.xsd",
               "RelativeToolTip": "slownik\\dsBaza.xsd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2025-01-03T16:00:13.077Z",
+              "WhenOpened": "2025-01-05T11:34:18.273Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form1.cs [Projekt]",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs",
               "RelativeDocumentMoniker": "slownik\\Form1.cs",
-              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs [Projekt]",
-              "RelativeToolTip": "slownik\\Form1.cs [Projekt]",
+              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs",
+              "RelativeToolTip": "slownik\\Form1.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:36:32.444Z",
-              "EditorCaption": " [Projekt]"
+              "WhenOpened": "2025-01-05T11:47:34.694Z",
+              "EditorCaption": ""
             }
           ]
         }

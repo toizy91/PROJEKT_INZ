@@ -33,4 +33,13 @@
     <zaimek />
     <przypadek />
   </TDe>
+  <TDe>
+    <wyraz>Besser vorbeugen als heilen</wyraz>
+    <znaczenie>lepiej zapobiegać niż leczyć</znaczenie>
+    <typ>zwrot</typ>
+    <kategoria>inne</kategoria>
+    <rodzajnik />
+    <zaimek />
+    <przypadek />
+  </TDe>
 </dsBaza>

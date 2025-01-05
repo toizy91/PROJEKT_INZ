@@ -18,3 +18,6 @@ C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\obj\Debug\net8.0-windows\slow
 C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\obj\Debug\net8.0-windows\slownik.DS_form_en.resources
 C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\obj\Debug\net8.0-windows\slownik.DK_form.resources
 C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\obj\Debug\net8.0-windows\slownik.dodajSlowoForm.resources
+C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\obj\Debug\net8.0-windows\slownik.sourcelink.json
+C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\obj\Debug\net8.0-windows\slownik.dodSlowNIe.resources
+C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\obj\Debug\net8.0-windows\slownik.zarzSlowNiem.resources
