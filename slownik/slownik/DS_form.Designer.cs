@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             panel1 = new Panel();
+            btnZamknij = new Button();
             btnDodajSlowo = new Button();
             btnUsunSlowo = new Button();
             dgvSlowa = new DataGridView();
@@ -40,6 +42,7 @@
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             tsLiczbaSlow = new ToolStripStatusLabel();
+            timer1 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvSlowa).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dsBaza1).BeginInit();
@@ -48,22 +51,34 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.White;
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(btnZamknij);
             panel1.Controls.Add(btnDodajSlowo);
             panel1.Controls.Add(btnUsunSlowo);
             panel1.Controls.Add(dgvSlowa);
-            panel1.Location = new Point(15, 15);
-            panel1.Margin = new Padding(4);
+            panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(754, 343);
+            panel1.Size = new Size(604, 308);
             panel1.TabIndex = 0;
+            // 
+            // btnZamknij
+            // 
+            btnZamknij.ForeColor = Color.Blue;
+            btnZamknij.Location = new Point(484, 265);
+            btnZamknij.Name = "btnZamknij";
+            btnZamknij.Size = new Size(94, 29);
+            btnZamknij.TabIndex = 14;
+            btnZamknij.Text = "Zamknij";
+            btnZamknij.UseVisualStyleBackColor = true;
+            btnZamknij.Click += btnZamknij_Click;
             // 
             // btnDodajSlowo
             // 
-            btnDodajSlowo.Location = new Point(365, 288);
-            btnDodajSlowo.Margin = new Padding(4);
+            btnDodajSlowo.ForeColor = Color.Green;
+            btnDodajSlowo.Location = new Point(292, 230);
             btnDodajSlowo.Name = "btnDodajSlowo";
-            btnDodajSlowo.Size = new Size(198, 36);
+            btnDodajSlowo.Size = new Size(158, 29);
             btnDodajSlowo.TabIndex = 13;
             btnDodajSlowo.Text = "Dodaj nowe słowo";
             btnDodajSlowo.UseVisualStyleBackColor = true;
@@ -71,13 +86,14 @@
             // 
             // btnUsunSlowo
             // 
-            btnUsunSlowo.Location = new Point(570, 288);
-            btnUsunSlowo.Margin = new Padding(4);
+            btnUsunSlowo.ForeColor = Color.Red;
+            btnUsunSlowo.Location = new Point(456, 230);
             btnUsunSlowo.Name = "btnUsunSlowo";
-            btnUsunSlowo.Size = new Size(152, 36);
+            btnUsunSlowo.Size = new Size(122, 29);
             btnUsunSlowo.TabIndex = 12;
             btnUsunSlowo.Text = "Usuń wybrane";
             btnUsunSlowo.UseVisualStyleBackColor = true;
+            btnUsunSlowo.Click += btnUsunSlowo_Click;
             // 
             // dgvSlowa
             // 
@@ -88,14 +104,13 @@
             dgvSlowa.Columns.AddRange(new DataGridViewColumn[] { wyrazDataGridViewTextBoxColumn, znaczenieDataGridViewTextBoxColumn, typDataGridViewTextBoxColumn, kategoriaDataGridViewTextBoxColumn });
             dgvSlowa.DataMember = "TEn";
             dgvSlowa.DataSource = dsBaza1;
-            dgvSlowa.Location = new Point(31, 30);
-            dgvSlowa.Margin = new Padding(4);
+            dgvSlowa.Location = new Point(25, 24);
             dgvSlowa.MultiSelect = false;
             dgvSlowa.Name = "dgvSlowa";
             dgvSlowa.ReadOnly = true;
             dgvSlowa.RowHeadersWidth = 51;
             dgvSlowa.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvSlowa.Size = new Size(691, 235);
+            dgvSlowa.Size = new Size(553, 188);
             dgvSlowa.TabIndex = 11;
             // 
             // wyrazDataGridViewTextBoxColumn
@@ -142,41 +157,49 @@
             // 
             // statusStrip1
             // 
+            statusStrip1.BackColor = Color.White;
             statusStrip1.ImageScalingSize = new Size(20, 20);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, tsLiczbaSlow });
-            statusStrip1.Location = new Point(0, 383);
+            statusStrip1.Location = new Point(0, 337);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Padding = new Padding(1, 0, 18, 0);
-            statusStrip1.Size = new Size(785, 32);
+            statusStrip1.Size = new Size(628, 26);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(121, 25);
+            toolStripStatusLabel1.Size = new Size(101, 20);
             toolStripStatusLabel1.Text = "Słów na liście:";
             // 
             // tsLiczbaSlow
             // 
             tsLiczbaSlow.Name = "tsLiczbaSlow";
-            tsLiczbaSlow.Size = new Size(22, 25);
+            tsLiczbaSlow.Size = new Size(17, 20);
             tsLiczbaSlow.Text = "0";
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
             // 
             // DS_form_en
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(785, 415);
+            BackColor = Color.FromArgb(64, 64, 64);
+            ClientSize = new Size(628, 363);
             Controls.Add(statusStrip1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(4);
             MaximizeBox = false;
+            MaximumSize = new Size(646, 410);
             MinimizeBox = false;
+            MinimumSize = new Size(646, 410);
             Name = "DS_form_en";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Zarządzaj słowami angielskimi";
+            FormClosed += DS_form_en_FormClosed;
             Load += DS_form_en_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvSlowa).EndInit();
@@ -201,5 +224,7 @@
         private DataGridViewTextBoxColumn znaczenieDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn typDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn kategoriaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Timer timer1;
+        private Button btnZamknij;
     }
 }

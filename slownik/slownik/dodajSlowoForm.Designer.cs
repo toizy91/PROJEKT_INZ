@@ -49,6 +49,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.White;
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(button1);
             panel1.Controls.Add(btnCzyscPola);
@@ -68,6 +69,7 @@
             // 
             // button1
             // 
+            button1.ForeColor = Color.Blue;
             button1.Location = new Point(376, 200);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
@@ -78,6 +80,7 @@
             // 
             // btnCzyscPola
             // 
+            btnCzyscPola.ForeColor = Color.Red;
             btnCzyscPola.Location = new Point(251, 165);
             btnCzyscPola.Name = "btnCzyscPola";
             btnCzyscPola.Size = new Size(94, 29);
@@ -87,6 +90,7 @@
             // 
             // btnDodajSlowo
             // 
+            btnDodajSlowo.ForeColor = Color.FromArgb(0, 192, 0);
             btnDodajSlowo.Location = new Point(351, 165);
             btnDodajSlowo.Name = "btnDodajSlowo";
             btnDodajSlowo.Size = new Size(119, 29);
@@ -184,13 +188,17 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(519, 270);
+            BackColor = Color.FromArgb(64, 64, 64);
+            ClientSize = new Size(518, 265);
             Controls.Add(panel1);
             MaximizeBox = false;
+            MaximumSize = new Size(536, 312);
             MinimizeBox = false;
+            MinimumSize = new Size(536, 312);
             Name = "dodajSlowoForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Dodaj słowo angielskie";
+            FormClosed += dodajSlowoForm_FormClosed;
             Load += dodajSlowoForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

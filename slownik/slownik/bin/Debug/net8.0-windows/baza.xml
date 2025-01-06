@@ -1,21 +1,21 @@
 <?xml version="1.0" standalone="yes"?>
 <dsBaza xmlns="http://tempuri.org/dsBaza.xsd">
   <TEn>
-    <wyraz>word</wyraz>
-    <znaczenie>słowo</znaczenie>
-    <typ>inne</typ>
-    <kategoria>System.Data.DataRowView</kategoria>
-  </TEn>
-  <TEn>
-    <wyraz>and</wyraz>
-    <znaczenie>i</znaczenie>
-    <typ>inne</typ>
+    <wyraz>door</wyraz>
+    <znaczenie>drzwi</znaczenie>
+    <typ>rzeczownik</typ>
     <kategoria>inne</kategoria>
   </TEn>
   <TEn>
-    <wyraz>sd</wyraz>
-    <znaczenie>sdfsd</znaczenie>
-    <typ>czasownik frazowy</typ>
+    <wyraz>window</wyraz>
+    <znaczenie>okno</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>inne</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>mum</wyraz>
+    <znaczenie>mama</znaczenie>
+    <typ>rzeczownik</typ>
     <kategoria>inne</kategoria>
   </TEn>
   <TKategorie>

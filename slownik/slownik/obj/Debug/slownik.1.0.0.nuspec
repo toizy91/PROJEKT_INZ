@@ -6,7 +6,7 @@
     <title>Słownik języka angielskiego i niemieckiego</title>
     <authors>Tomasz Izydorczyk</authors>
     <description>Package Description</description>
-    <repository type="git" commit="7444a94502b107d3fac23381d537c9023caa9dc0" />
+    <repository type="git" commit="499f2a45535e0e0ae59af06e2f4d94f8effeb534" />
     <dependencies>
       <group targetFramework="net8.0-windows7.0" />
     </dependencies>
@@ -17,7 +17,7 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\bin\Debug\net8.0-windows\slownik.runtimeconfig.json" target="lib\net8.0-windows7.0\slownik.runtimeconfig.json" />
-    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\bin\Debug\net8.0-windows\slownik.dll" target="lib\net8.0-windows7.0\slownik.dll" />
+    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\slownik\slownik\bin\Debug\net8.0-windows\slownik.runtimeconfig.json" target="lib\net8.0-windows7.0\slownik.runtimeconfig.json" />
+    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\slownik\slownik\bin\Debug\net8.0-windows\slownik.dll" target="lib\net8.0-windows7.0\slownik.dll" />
   </files>
 </package>

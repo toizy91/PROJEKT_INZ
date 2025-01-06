@@ -100,36 +100,43 @@ namespace slownik
 
         private void btnDodajSlowo_Click(object sender, EventArgs e)
         {
-            if  (cbRodzajnik.Enabled == true)
+            if (cbRodzajnik.Enabled == true)
             {
                 string t = txtWyraz.Text.Trim();
-                t = char.ToUpper(t[0])+ t.Substring(1); 
+                t = char.ToUpper(t[0]) + t.Substring(1);
                 txtWyraz.Text = t;
             }
 
-            if (dsBaza1.TDe.Rows.Find(txtWyraz.Text.Trim()) == null)
+            try
             {
-                DataRow dr = dsBaza1.TDe.NewRow();
-                dr["wyraz"] = txtWyraz.Text.Trim();
-                dr["znaczenie"] = txtZnaczenie.Text.Trim();
-                dr["typ"] = cbTypSlowa.Text;
-                dr["kategoria"] = cbKategoria.Text;
-                dr["rodzajnik"] = cbRodzajnik.Text;
-                dr["zaimek"] = cbZaimek.Text;
-                dr["przypadek"] = cbPrzypadek.Text;
+                if (dsBaza1.TDe.Rows.Find(txtWyraz.Text.Trim()) == null)
+                {
+                    DataRow dr = dsBaza1.TDe.NewRow();
+                    dr["wyraz"] = txtWyraz.Text.Trim();
+                    dr["znaczenie"] = txtZnaczenie.Text.Trim();
+                    dr["typ"] = cbTypSlowa.Text;
+                    dr["kategoria"] = cbKategoria.Text;
+                    dr["rodzajnik"] = cbRodzajnik.Text;
+                    dr["zaimek"] = cbZaimek.Text;
+                    dr["przypadek"] = cbPrzypadek.Text;
 
-                dsBaza1.TDe.Rows.Add(dr);
-                dsBaza1.WriteXml(FILE_NAME_BASE);
+                    dsBaza1.TDe.Rows.Add(dr);
+                    dsBaza1.WriteXml(FILE_NAME_BASE);
 
-                MessageBox.Show(this, "Pomyślnie dodano słowo do bazy!", "Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtWyraz.Clear();
-                txtZnaczenie.Clear();
+                    MessageBox.Show(this, "Pomyślnie dodano słowo do bazy!", "Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtWyraz.Clear();
+                    txtZnaczenie.Clear();
+                }
+                else
+                {
+                    MessageBox.Show(this, "Podane słowo już istnieje w bazie!", "Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtWyraz.Clear();
+                    txtZnaczenie.Clear();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show(this, "Podane słowo już istnieje w bazie!", "Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtWyraz.Clear();
-                txtZnaczenie.Clear();
+                MessageBox.Show(this, ex.Message, "Wystąpił nieoczekiwany błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -154,6 +161,41 @@ namespace slownik
         private void dodSlowNIe_FormClosed(object sender, FormClosedEventArgs e)
         {
             mainForm.Refresh();
+        }
+
+        private void txtWyraz_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                txtWyraz.Text += "ä";
+                txtWyraz.Focus();
+                txtWyraz.SelectionStart = txtWyraz.Text.Length;
+                txtWyraz.SelectionLength = 0;
+            }
+            else
+            if (e.KeyCode == Keys.F2)
+            {
+                txtWyraz.Text += "ß";
+                txtWyraz.Focus();
+                txtWyraz.SelectionStart = txtWyraz.Text.Length;
+                txtWyraz.SelectionLength = 0;
+            }
+            else
+            if (e.KeyCode == Keys.F3)
+            {
+                txtWyraz.Text += "ö";
+                txtWyraz.Focus();
+                txtWyraz.SelectionStart = txtWyraz.Text.Length;
+                txtWyraz.SelectionLength = 0;
+            }
+            else
+            if (e.KeyCode == Keys.F4)
+            {
+                txtWyraz.Text += "ü";
+                txtWyraz.Focus();
+                txtWyraz.SelectionStart = txtWyraz.Text.Length;
+                txtWyraz.SelectionLength = 0;
+            }
         }
     }
 }

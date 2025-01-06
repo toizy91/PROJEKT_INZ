@@ -28,19 +28,11 @@ namespace slownik {
         
         private TKategorieDataTable tableTKategorie;
         
-        private TPl_enDataTable tableTPl_en;
-        
         private TDeDataTable tableTDe;
-        
-        private TPl_deDataTable tableTPl_de;
         
         private global::System.Data.DataRelation relationTKategorie_TEn;
         
-        private global::System.Data.DataRelation relationTKategorie_TPl_en;
-        
         private global::System.Data.DataRelation relationTKategorie_TDe;
-        
-        private global::System.Data.DataRelation relationTKategorie_TPl_de;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -78,14 +70,8 @@ namespace slownik {
                 if ((ds.Tables["TKategorie"] != null)) {
                     base.Tables.Add(new TKategorieDataTable(ds.Tables["TKategorie"]));
                 }
-                if ((ds.Tables["TPl_en"] != null)) {
-                    base.Tables.Add(new TPl_enDataTable(ds.Tables["TPl_en"]));
-                }
                 if ((ds.Tables["TDe"] != null)) {
                     base.Tables.Add(new TDeDataTable(ds.Tables["TDe"]));
-                }
-                if ((ds.Tables["TPl_de"] != null)) {
-                    base.Tables.Add(new TPl_deDataTable(ds.Tables["TPl_de"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -129,29 +115,9 @@ namespace slownik {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public TPl_enDataTable TPl_en {
-            get {
-                return this.tableTPl_en;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public TDeDataTable TDe {
             get {
                 return this.tableTDe;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public TPl_deDataTable TPl_de {
-            get {
-                return this.tableTPl_de;
             }
         }
         
@@ -228,14 +194,8 @@ namespace slownik {
                 if ((ds.Tables["TKategorie"] != null)) {
                     base.Tables.Add(new TKategorieDataTable(ds.Tables["TKategorie"]));
                 }
-                if ((ds.Tables["TPl_en"] != null)) {
-                    base.Tables.Add(new TPl_enDataTable(ds.Tables["TPl_en"]));
-                }
                 if ((ds.Tables["TDe"] != null)) {
                     base.Tables.Add(new TDeDataTable(ds.Tables["TDe"]));
-                }
-                if ((ds.Tables["TPl_de"] != null)) {
-                    base.Tables.Add(new TPl_deDataTable(ds.Tables["TPl_de"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -282,28 +242,14 @@ namespace slownik {
                     this.tableTKategorie.InitVars();
                 }
             }
-            this.tableTPl_en = ((TPl_enDataTable)(base.Tables["TPl_en"]));
-            if ((initTable == true)) {
-                if ((this.tableTPl_en != null)) {
-                    this.tableTPl_en.InitVars();
-                }
-            }
             this.tableTDe = ((TDeDataTable)(base.Tables["TDe"]));
             if ((initTable == true)) {
                 if ((this.tableTDe != null)) {
                     this.tableTDe.InitVars();
                 }
             }
-            this.tableTPl_de = ((TPl_deDataTable)(base.Tables["TPl_de"]));
-            if ((initTable == true)) {
-                if ((this.tableTPl_de != null)) {
-                    this.tableTPl_de.InitVars();
-                }
-            }
             this.relationTKategorie_TEn = this.Relations["TKategorie_TEn"];
-            this.relationTKategorie_TPl_en = this.Relations["TKategorie_TPl_en"];
             this.relationTKategorie_TDe = this.Relations["TKategorie_TDe"];
-            this.relationTKategorie_TPl_de = this.Relations["TKategorie_TPl_de"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -318,28 +264,16 @@ namespace slownik {
             base.Tables.Add(this.tableTEn);
             this.tableTKategorie = new TKategorieDataTable();
             base.Tables.Add(this.tableTKategorie);
-            this.tableTPl_en = new TPl_enDataTable();
-            base.Tables.Add(this.tableTPl_en);
             this.tableTDe = new TDeDataTable();
             base.Tables.Add(this.tableTDe);
-            this.tableTPl_de = new TPl_deDataTable();
-            base.Tables.Add(this.tableTPl_de);
             this.relationTKategorie_TEn = new global::System.Data.DataRelation("TKategorie_TEn", new global::System.Data.DataColumn[] {
                         this.tableTKategorie.kategoriaColumn}, new global::System.Data.DataColumn[] {
                         this.tableTEn.kategoriaColumn}, false);
             this.Relations.Add(this.relationTKategorie_TEn);
-            this.relationTKategorie_TPl_en = new global::System.Data.DataRelation("TKategorie_TPl_en", new global::System.Data.DataColumn[] {
-                        this.tableTKategorie.kategoriaColumn}, new global::System.Data.DataColumn[] {
-                        this.tableTPl_en.kategoriaColumn}, false);
-            this.Relations.Add(this.relationTKategorie_TPl_en);
             this.relationTKategorie_TDe = new global::System.Data.DataRelation("TKategorie_TDe", new global::System.Data.DataColumn[] {
                         this.tableTKategorie.kategoriaColumn}, new global::System.Data.DataColumn[] {
                         this.tableTDe.kategoriaColumn}, false);
             this.Relations.Add(this.relationTKategorie_TDe);
-            this.relationTKategorie_TPl_de = new global::System.Data.DataRelation("TKategorie_TPl_de", new global::System.Data.DataColumn[] {
-                        this.tableTKategorie.kategoriaColumn}, new global::System.Data.DataColumn[] {
-                        this.tableTPl_de.kategoriaColumn}, false);
-            this.Relations.Add(this.relationTKategorie_TPl_de);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -356,19 +290,7 @@ namespace slownik {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeTPl_en() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializeTDe() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeTPl_de() {
             return false;
         }
         
@@ -434,13 +356,7 @@ namespace slownik {
         public delegate void TKategorieRowChangeEventHandler(object sender, TKategorieRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void TPl_enRowChangeEventHandler(object sender, TPl_enRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void TDeRowChangeEventHandler(object sender, TDeRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void TPl_deRowChangeEventHandler(object sender, TPl_deRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -1012,300 +928,6 @@ namespace slownik {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class TPl_enDataTable : global::System.Data.TypedTableBase<TPl_enRow> {
-            
-            private global::System.Data.DataColumn columnwyraz;
-            
-            private global::System.Data.DataColumn columnznaczenie;
-            
-            private global::System.Data.DataColumn columntyp;
-            
-            private global::System.Data.DataColumn columnkategoria;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_enDataTable() {
-                this.TableName = "TPl_en";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal TPl_enDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
-                " or extended by application code.", DiagnosticId="SYSLIB0051")]
-            protected TPl_enDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn wyrazColumn {
-                get {
-                    return this.columnwyraz;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn znaczenieColumn {
-                get {
-                    return this.columnznaczenie;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn typColumn {
-                get {
-                    return this.columntyp;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn kategoriaColumn {
-                get {
-                    return this.columnkategoria;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_enRow this[int index] {
-                get {
-                    return ((TPl_enRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TPl_enRowChangeEventHandler TPl_enRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TPl_enRowChangeEventHandler TPl_enRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TPl_enRowChangeEventHandler TPl_enRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TPl_enRowChangeEventHandler TPl_enRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddTPl_enRow(TPl_enRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_enRow AddTPl_enRow(string wyraz, string znaczenie, string typ, TKategorieRow parentTKategorieRowByTKategorie_TPl_en) {
-                TPl_enRow rowTPl_enRow = ((TPl_enRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        wyraz,
-                        znaczenie,
-                        typ,
-                        null};
-                if ((parentTKategorieRowByTKategorie_TPl_en != null)) {
-                    columnValuesArray[3] = parentTKategorieRowByTKategorie_TPl_en[0];
-                }
-                rowTPl_enRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowTPl_enRow);
-                return rowTPl_enRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                TPl_enDataTable cln = ((TPl_enDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new TPl_enDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal void InitVars() {
-                this.columnwyraz = base.Columns["wyraz"];
-                this.columnznaczenie = base.Columns["znaczenie"];
-                this.columntyp = base.Columns["typ"];
-                this.columnkategoria = base.Columns["kategoria"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            private void InitClass() {
-                this.columnwyraz = new global::System.Data.DataColumn("wyraz", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnwyraz);
-                this.columnznaczenie = new global::System.Data.DataColumn("znaczenie", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnznaczenie);
-                this.columntyp = new global::System.Data.DataColumn("typ", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntyp);
-                this.columnkategoria = new global::System.Data.DataColumn("kategoria", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnkategoria);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_enRow NewTPl_enRow() {
-                return ((TPl_enRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new TPl_enRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(TPl_enRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.TPl_enRowChanged != null)) {
-                    this.TPl_enRowChanged(this, new TPl_enRowChangeEvent(((TPl_enRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.TPl_enRowChanging != null)) {
-                    this.TPl_enRowChanging(this, new TPl_enRowChangeEvent(((TPl_enRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.TPl_enRowDeleted != null)) {
-                    this.TPl_enRowDeleted(this, new TPl_enRowChangeEvent(((TPl_enRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.TPl_enRowDeleting != null)) {
-                    this.TPl_enRowDeleting(this, new TPl_enRowChangeEvent(((TPl_enRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveTPl_enRow(TPl_enRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBaza ds = new dsBaza();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "TPl_enDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class TDeDataTable : global::System.Data.TypedTableBase<TDeRow> {
             
             private global::System.Data.DataColumn columnwyraz;
@@ -1649,353 +1271,6 @@ namespace slownik {
         }
         
         /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class TPl_deDataTable : global::System.Data.TypedTableBase<TPl_deRow> {
-            
-            private global::System.Data.DataColumn columnwyraz;
-            
-            private global::System.Data.DataColumn columnznaczenie;
-            
-            private global::System.Data.DataColumn columntyp;
-            
-            private global::System.Data.DataColumn columnkategoria;
-            
-            private global::System.Data.DataColumn columnrodzajnik;
-            
-            private global::System.Data.DataColumn columnzaimek;
-            
-            private global::System.Data.DataColumn columnprzypadek;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_deDataTable() {
-                this.TableName = "TPl_de";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal TPl_deDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
-                " or extended by application code.", DiagnosticId="SYSLIB0051")]
-            protected TPl_deDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn wyrazColumn {
-                get {
-                    return this.columnwyraz;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn znaczenieColumn {
-                get {
-                    return this.columnznaczenie;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn typColumn {
-                get {
-                    return this.columntyp;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn kategoriaColumn {
-                get {
-                    return this.columnkategoria;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn rodzajnikColumn {
-                get {
-                    return this.columnrodzajnik;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn zaimekColumn {
-                get {
-                    return this.columnzaimek;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn przypadekColumn {
-                get {
-                    return this.columnprzypadek;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_deRow this[int index] {
-                get {
-                    return ((TPl_deRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TPl_deRowChangeEventHandler TPl_deRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TPl_deRowChangeEventHandler TPl_deRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TPl_deRowChangeEventHandler TPl_deRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TPl_deRowChangeEventHandler TPl_deRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddTPl_deRow(TPl_deRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_deRow AddTPl_deRow(string wyraz, string znaczenie, string typ, TKategorieRow parentTKategorieRowByTKategorie_TPl_de, string rodzajnik, string zaimek, string przypadek) {
-                TPl_deRow rowTPl_deRow = ((TPl_deRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        wyraz,
-                        znaczenie,
-                        typ,
-                        null,
-                        rodzajnik,
-                        zaimek,
-                        przypadek};
-                if ((parentTKategorieRowByTKategorie_TPl_de != null)) {
-                    columnValuesArray[3] = parentTKategorieRowByTKategorie_TPl_de[0];
-                }
-                rowTPl_deRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowTPl_deRow);
-                return rowTPl_deRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_deRow FindBywyraz(string wyraz) {
-                return ((TPl_deRow)(this.Rows.Find(new object[] {
-                            wyraz})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                TPl_deDataTable cln = ((TPl_deDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new TPl_deDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal void InitVars() {
-                this.columnwyraz = base.Columns["wyraz"];
-                this.columnznaczenie = base.Columns["znaczenie"];
-                this.columntyp = base.Columns["typ"];
-                this.columnkategoria = base.Columns["kategoria"];
-                this.columnrodzajnik = base.Columns["rodzajnik"];
-                this.columnzaimek = base.Columns["zaimek"];
-                this.columnprzypadek = base.Columns["przypadek"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            private void InitClass() {
-                this.columnwyraz = new global::System.Data.DataColumn("wyraz", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnwyraz);
-                this.columnznaczenie = new global::System.Data.DataColumn("znaczenie", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnznaczenie);
-                this.columntyp = new global::System.Data.DataColumn("typ", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntyp);
-                this.columnkategoria = new global::System.Data.DataColumn("kategoria", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnkategoria);
-                this.columnrodzajnik = new global::System.Data.DataColumn("rodzajnik", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnrodzajnik);
-                this.columnzaimek = new global::System.Data.DataColumn("zaimek", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnzaimek);
-                this.columnprzypadek = new global::System.Data.DataColumn("przypadek", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnprzypadek);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnwyraz}, true));
-                this.columnwyraz.AllowDBNull = false;
-                this.columnwyraz.Unique = true;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_deRow NewTPl_deRow() {
-                return ((TPl_deRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new TPl_deRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(TPl_deRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.TPl_deRowChanged != null)) {
-                    this.TPl_deRowChanged(this, new TPl_deRowChangeEvent(((TPl_deRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.TPl_deRowChanging != null)) {
-                    this.TPl_deRowChanging(this, new TPl_deRowChangeEvent(((TPl_deRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.TPl_deRowDeleted != null)) {
-                    this.TPl_deRowDeleted(this, new TPl_deRowChangeEvent(((TPl_deRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.TPl_deRowDeleting != null)) {
-                    this.TPl_deRowDeleting(this, new TPl_deRowChangeEvent(((TPl_deRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveTPl_deRow(TPl_deRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBaza ds = new dsBaza();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "TPl_deDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class TEnRow : global::System.Data.DataRow {
@@ -2154,17 +1429,6 @@ namespace slownik {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_enRow[] GetTPl_enRows() {
-                if ((this.Table.ChildRelations["TKategorie_TPl_en"] == null)) {
-                    return new TPl_enRow[0];
-                }
-                else {
-                    return ((TPl_enRow[])(base.GetChildRows(this.Table.ChildRelations["TKategorie_TPl_en"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public TDeRow[] GetTDeRows() {
                 if ((this.Table.ChildRelations["TKategorie_TDe"] == null)) {
                     return new TDeRow[0];
@@ -2172,155 +1436,6 @@ namespace slownik {
                 else {
                     return ((TDeRow[])(base.GetChildRows(this.Table.ChildRelations["TKategorie_TDe"])));
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_deRow[] GetTPl_deRows() {
-                if ((this.Table.ChildRelations["TKategorie_TPl_de"] == null)) {
-                    return new TPl_deRow[0];
-                }
-                else {
-                    return ((TPl_deRow[])(base.GetChildRows(this.Table.ChildRelations["TKategorie_TPl_de"])));
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class TPl_enRow : global::System.Data.DataRow {
-            
-            private TPl_enDataTable tableTPl_en;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal TPl_enRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableTPl_en = ((TPl_enDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string wyraz {
-                get {
-                    try {
-                        return ((string)(this[this.tableTPl_en.wyrazColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'wyraz\' w tabeli \'TPl_en\' to DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTPl_en.wyrazColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string znaczenie {
-                get {
-                    try {
-                        return ((string)(this[this.tableTPl_en.znaczenieColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'znaczenie\' w tabeli \'TPl_en\' to DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTPl_en.znaczenieColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string typ {
-                get {
-                    try {
-                        return ((string)(this[this.tableTPl_en.typColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'typ\' w tabeli \'TPl_en\' to DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTPl_en.typColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string kategoria {
-                get {
-                    try {
-                        return ((string)(this[this.tableTPl_en.kategoriaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'kategoria\' w tabeli \'TPl_en\' to DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTPl_en.kategoriaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TKategorieRow TKategorieRow {
-                get {
-                    return ((TKategorieRow)(this.GetParentRow(this.Table.ParentRelations["TKategorie_TPl_en"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["TKategorie_TPl_en"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IswyrazNull() {
-                return this.IsNull(this.tableTPl_en.wyrazColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetwyrazNull() {
-                this[this.tableTPl_en.wyrazColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsznaczenieNull() {
-                return this.IsNull(this.tableTPl_en.znaczenieColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetznaczenieNull() {
-                this[this.tableTPl_en.znaczenieColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IstypNull() {
-                return this.IsNull(this.tableTPl_en.typColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SettypNull() {
-                this[this.tableTPl_en.typColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IskategoriaNull() {
-                return this.IsNull(this.tableTPl_en.kategoriaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetkategoriaNull() {
-                this[this.tableTPl_en.kategoriaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2530,211 +1645,6 @@ namespace slownik {
         }
         
         /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class TPl_deRow : global::System.Data.DataRow {
-            
-            private TPl_deDataTable tableTPl_de;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal TPl_deRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableTPl_de = ((TPl_deDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string wyraz {
-                get {
-                    return ((string)(this[this.tableTPl_de.wyrazColumn]));
-                }
-                set {
-                    this[this.tableTPl_de.wyrazColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string znaczenie {
-                get {
-                    try {
-                        return ((string)(this[this.tableTPl_de.znaczenieColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'znaczenie\' w tabeli \'TPl_de\' to DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTPl_de.znaczenieColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string typ {
-                get {
-                    try {
-                        return ((string)(this[this.tableTPl_de.typColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'typ\' w tabeli \'TPl_de\' to DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTPl_de.typColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string kategoria {
-                get {
-                    try {
-                        return ((string)(this[this.tableTPl_de.kategoriaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'kategoria\' w tabeli \'TPl_de\' to DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTPl_de.kategoriaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string rodzajnik {
-                get {
-                    try {
-                        return ((string)(this[this.tableTPl_de.rodzajnikColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'rodzajnik\' w tabeli \'TPl_de\' to DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTPl_de.rodzajnikColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string zaimek {
-                get {
-                    try {
-                        return ((string)(this[this.tableTPl_de.zaimekColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'zaimek\' w tabeli \'TPl_de\' to DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTPl_de.zaimekColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string przypadek {
-                get {
-                    try {
-                        return ((string)(this[this.tableTPl_de.przypadekColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'przypadek\' w tabeli \'TPl_de\' to DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTPl_de.przypadekColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TKategorieRow TKategorieRow {
-                get {
-                    return ((TKategorieRow)(this.GetParentRow(this.Table.ParentRelations["TKategorie_TPl_de"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["TKategorie_TPl_de"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsznaczenieNull() {
-                return this.IsNull(this.tableTPl_de.znaczenieColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetznaczenieNull() {
-                this[this.tableTPl_de.znaczenieColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IstypNull() {
-                return this.IsNull(this.tableTPl_de.typColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SettypNull() {
-                this[this.tableTPl_de.typColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IskategoriaNull() {
-                return this.IsNull(this.tableTPl_de.kategoriaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetkategoriaNull() {
-                this[this.tableTPl_de.kategoriaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsrodzajnikNull() {
-                return this.IsNull(this.tableTPl_de.rodzajnikColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetrodzajnikNull() {
-                this[this.tableTPl_de.rodzajnikColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IszaimekNull() {
-                return this.IsNull(this.tableTPl_de.zaimekColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetzaimekNull() {
-                this[this.tableTPl_de.zaimekColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsprzypadekNull() {
-                return this.IsNull(this.tableTPl_de.przypadekColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetprzypadekNull() {
-                this[this.tableTPl_de.przypadekColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -2806,40 +1716,6 @@ namespace slownik {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class TPl_enRowChangeEvent : global::System.EventArgs {
-            
-            private TPl_enRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_enRowChangeEvent(TPl_enRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_enRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public class TDeRowChangeEvent : global::System.EventArgs {
             
             private TDeRow eventRow;
@@ -2856,40 +1732,6 @@ namespace slownik {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public TDeRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class TPl_deRowChangeEvent : global::System.EventArgs {
-            
-            private TPl_deRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_deRowChangeEvent(TPl_deRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TPl_deRow Row {
                 get {
                     return this.eventRow;
                 }

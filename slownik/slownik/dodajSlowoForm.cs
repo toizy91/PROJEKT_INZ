@@ -12,9 +12,13 @@ namespace slownik
 {
     public partial class dodajSlowoForm : Form
     {
-        public dodajSlowoForm()
+        private DS_form_en mainForm;
+        public dodajSlowoForm(DS_form_en form)
         {
             InitializeComponent();
+            mainForm = form;
+            this.FormClosed += new FormClosedEventHandler(dodajSlowoForm_FormClosed);
+
         }
         const string FILE_NAME_BASE = "baza.xml";
         private void button1_Click(object sender, EventArgs e)
@@ -38,9 +42,10 @@ namespace slownik
                 MessageBox.Show(this, "Pomyślnie dodano słowo do bazy!", "Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtWyraz.Clear();
                 txtZnaczenie.Clear();
-            }else
+            }
+            else
             {
-                MessageBox.Show(this,"Podane słowo już istnieje w bazie!","Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, "Podane słowo już istnieje w bazie!", "Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -54,10 +59,16 @@ namespace slownik
             if (cbTypSlowa.SelectedIndex == -1 || cbKategoria.SelectedIndex == -1 || txtWyraz.Text.Length == 0 || txtZnaczenie.Text.Length == 0)
             {
                 btnDodajSlowo.Enabled = false;
-            }else
-            {
-                btnDodajSlowo.Enabled=true;
             }
+            else
+            {
+                btnDodajSlowo.Enabled = true;
+            }
+        }
+
+        private void dodajSlowoForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            mainForm.Refresh();
         }
     }
 }

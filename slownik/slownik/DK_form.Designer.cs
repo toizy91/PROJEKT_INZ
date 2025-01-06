@@ -139,11 +139,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(576, 261);
+            ClientSize = new Size(576, 167);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
+            MaximumSize = new Size(594, 214);
             MinimizeBox = false;
+            MinimumSize = new Size(594, 214);
             Name = "DK_form";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Zarządzaj kategoriami";

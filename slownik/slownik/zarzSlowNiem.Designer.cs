@@ -54,22 +54,25 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.White;
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(btnZamknij);
             panel1.Controls.Add(dgvSlowa);
             panel1.Controls.Add(btnDodajSlowo);
             panel1.Controls.Add(btnUsunSlowo);
-            panel1.Location = new Point(13, 13);
-            panel1.Margin = new Padding(4);
+            panel1.ForeColor = Color.White;
+            panel1.Location = new Point(10, 10);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1200, 384);
+            panel1.Size = new Size(960, 308);
             panel1.TabIndex = 1;
             // 
             // btnZamknij
             // 
-            btnZamknij.Location = new Point(1046, 331);
+            btnZamknij.ForeColor = Color.Blue;
+            btnZamknij.Location = new Point(837, 265);
+            btnZamknij.Margin = new Padding(2);
             btnZamknij.Name = "btnZamknij";
-            btnZamknij.Size = new Size(112, 34);
+            btnZamknij.Size = new Size(90, 27);
             btnZamknij.TabIndex = 15;
             btnZamknij.Text = "Zamknij";
             btnZamknij.UseVisualStyleBackColor = true;
@@ -84,13 +87,14 @@
             dgvSlowa.Columns.AddRange(new DataGridViewColumn[] { wyrazDataGridViewTextBoxColumn, znaczenieDataGridViewTextBoxColumn, typDataGridViewTextBoxColumn, kategoriaDataGridViewTextBoxColumn, rodzajnikDataGridViewTextBoxColumn, zaimekDataGridViewTextBoxColumn, przypadekDataGridViewTextBoxColumn });
             dgvSlowa.DataMember = "TDe";
             dgvSlowa.DataSource = dsBaza1;
-            dgvSlowa.Location = new Point(40, 30);
+            dgvSlowa.Location = new Point(32, 24);
+            dgvSlowa.Margin = new Padding(2);
             dgvSlowa.MultiSelect = false;
             dgvSlowa.Name = "dgvSlowa";
             dgvSlowa.ReadOnly = true;
             dgvSlowa.RowHeadersWidth = 62;
             dgvSlowa.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvSlowa.Size = new Size(1118, 225);
+            dgvSlowa.Size = new Size(894, 180);
             dgvSlowa.TabIndex = 14;
             // 
             // wyrazDataGridViewTextBoxColumn
@@ -164,10 +168,10 @@
             // 
             // btnDodajSlowo
             // 
-            btnDodajSlowo.Location = new Point(800, 288);
-            btnDodajSlowo.Margin = new Padding(4);
+            btnDodajSlowo.ForeColor = Color.Green;
+            btnDodajSlowo.Location = new Point(640, 230);
             btnDodajSlowo.Name = "btnDodajSlowo";
-            btnDodajSlowo.Size = new Size(198, 36);
+            btnDodajSlowo.Size = new Size(158, 29);
             btnDodajSlowo.TabIndex = 13;
             btnDodajSlowo.Text = "Dodaj nowe słowo";
             btnDodajSlowo.UseVisualStyleBackColor = true;
@@ -175,10 +179,10 @@
             // 
             // btnUsunSlowo
             // 
-            btnUsunSlowo.Location = new Point(1006, 288);
-            btnUsunSlowo.Margin = new Padding(4);
+            btnUsunSlowo.ForeColor = Color.Red;
+            btnUsunSlowo.Location = new Point(805, 230);
             btnUsunSlowo.Name = "btnUsunSlowo";
-            btnUsunSlowo.Size = new Size(152, 36);
+            btnUsunSlowo.Size = new Size(122, 29);
             btnUsunSlowo.TabIndex = 12;
             btnUsunSlowo.Text = "Usuń wybrane";
             btnUsunSlowo.UseVisualStyleBackColor = true;
@@ -186,24 +190,26 @@
             // 
             // statusStrip1
             // 
+            statusStrip1.BackColor = Color.White;
             statusStrip1.ImageScalingSize = new Size(24, 24);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, tsLab });
-            statusStrip1.Location = new Point(0, 405);
+            statusStrip1.Location = new Point(0, 331);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1231, 32);
+            statusStrip1.Padding = new Padding(1, 0, 11, 0);
+            statusStrip1.Size = new Size(988, 26);
             statusStrip1.TabIndex = 2;
             statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(121, 25);
+            toolStripStatusLabel1.Size = new Size(101, 20);
             toolStripStatusLabel1.Text = "Słów na liście:";
             // 
             // tsLab
             // 
             tsLab.Name = "tsLab";
-            tsLab.Size = new Size(22, 25);
+            tsLab.Size = new Size(17, 20);
             tsLab.Text = "0";
             // 
             // timer1
@@ -213,18 +219,21 @@
             // 
             // zarzSlowNiem
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1231, 437);
+            BackColor = Color.FromArgb(64, 64, 64);
+            ClientSize = new Size(988, 357);
             Controls.Add(statusStrip1);
             Controls.Add(panel1);
+            Margin = new Padding(2);
             MaximizeBox = false;
-            MaximumSize = new Size(1253, 493);
+            MaximumSize = new Size(1006, 404);
             MinimizeBox = false;
-            MinimumSize = new Size(1253, 493);
+            MinimumSize = new Size(1006, 404);
             Name = "zarzSlowNiem";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Zarządzaj słowami niemieckimi";
+            FormClosed += zarzSlowNiem_FormClosed;
             Load += zarzSlowNiem_Load;
             Enter += zarzSlowNiem_Load;
             panel1.ResumeLayout(false);

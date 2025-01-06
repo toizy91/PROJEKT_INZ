@@ -12,56 +12,33 @@
   <xs:element name="dsBaza" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBaza" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsBaza">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="TEn" msprop:Generator_RowClassName="TEnRow" msprop:Generator_RowEvHandlerName="TEnRowChangeEventHandler" msprop:Generator_RowDeletedName="TEnRowDeleted" msprop:Generator_RowDeletingName="TEnRowDeleting" msprop:Generator_RowEvArgName="TEnRowChangeEvent" msprop:Generator_TablePropName="TEn" msprop:Generator_RowChangedName="TEnRowChanged" msprop:Generator_UserTableName="TEn" msprop:Generator_RowChangingName="TEnRowChanging" msprop:Generator_TableClassName="TEnDataTable" msprop:Generator_TableVarName="tableTEn">
+        <xs:element name="TEn" msprop:Generator_RowEvHandlerName="TEnRowChangeEventHandler" msprop:Generator_RowDeletedName="TEnRowDeleted" msprop:Generator_RowDeletingName="TEnRowDeleting" msprop:Generator_RowEvArgName="TEnRowChangeEvent" msprop:Generator_TablePropName="TEn" msprop:Generator_RowChangedName="TEnRowChanged" msprop:Generator_UserTableName="TEn" msprop:Generator_RowChangingName="TEnRowChanging" msprop:Generator_RowClassName="TEnRow" msprop:Generator_TableClassName="TEnDataTable" msprop:Generator_TableVarName="tableTEn">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="wyraz" msprop:Generator_UserColumnName="wyraz" msprop:Generator_ColumnPropNameInTable="wyrazColumn" msprop:Generator_ColumnPropNameInRow="wyraz" msprop:Generator_ColumnVarNameInTable="columnwyraz" type="xs:string" />
-              <xs:element name="znaczenie" msprop:Generator_UserColumnName="znaczenie" msprop:Generator_ColumnPropNameInTable="znaczenieColumn" msprop:Generator_ColumnPropNameInRow="znaczenie" msprop:Generator_ColumnVarNameInTable="columnznaczenie" type="xs:string" minOccurs="0" />
-              <xs:element name="typ" msprop:Generator_UserColumnName="typ" msprop:Generator_ColumnPropNameInTable="typColumn" msprop:Generator_ColumnPropNameInRow="typ" msprop:Generator_ColumnVarNameInTable="columntyp" type="xs:string" minOccurs="0" />
-              <xs:element name="kategoria" msprop:Generator_UserColumnName="kategoria" msprop:Generator_ColumnPropNameInTable="kategoriaColumn" msprop:Generator_ColumnPropNameInRow="kategoria" msprop:Generator_ColumnVarNameInTable="columnkategoria" type="xs:string" minOccurs="0" />
+              <xs:element name="wyraz" msprop:Generator_ColumnPropNameInTable="wyrazColumn" msprop:Generator_ColumnPropNameInRow="wyraz" msprop:Generator_UserColumnName="wyraz" msprop:Generator_ColumnVarNameInTable="columnwyraz" type="xs:string" />
+              <xs:element name="znaczenie" msprop:Generator_ColumnPropNameInTable="znaczenieColumn" msprop:Generator_ColumnPropNameInRow="znaczenie" msprop:Generator_UserColumnName="znaczenie" msprop:Generator_ColumnVarNameInTable="columnznaczenie" type="xs:string" minOccurs="0" />
+              <xs:element name="typ" msprop:Generator_ColumnPropNameInTable="typColumn" msprop:Generator_ColumnPropNameInRow="typ" msprop:Generator_UserColumnName="typ" msprop:Generator_ColumnVarNameInTable="columntyp" type="xs:string" minOccurs="0" />
+              <xs:element name="kategoria" msprop:Generator_ColumnPropNameInTable="kategoriaColumn" msprop:Generator_ColumnPropNameInRow="kategoria" msprop:Generator_UserColumnName="kategoria" msprop:Generator_ColumnVarNameInTable="columnkategoria" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TKategorie" msprop:Generator_RowClassName="TKategorieRow" msprop:Generator_RowEvHandlerName="TKategorieRowChangeEventHandler" msprop:Generator_RowDeletedName="TKategorieRowDeleted" msprop:Generator_RowDeletingName="TKategorieRowDeleting" msprop:Generator_RowEvArgName="TKategorieRowChangeEvent" msprop:Generator_TablePropName="TKategorie" msprop:Generator_RowChangedName="TKategorieRowChanged" msprop:Generator_UserTableName="TKategorie" msprop:Generator_RowChangingName="TKategorieRowChanging" msprop:Generator_TableClassName="TKategorieDataTable" msprop:Generator_TableVarName="tableTKategorie">
+        <xs:element name="TKategorie" msprop:Generator_RowEvHandlerName="TKategorieRowChangeEventHandler" msprop:Generator_RowDeletedName="TKategorieRowDeleted" msprop:Generator_RowDeletingName="TKategorieRowDeleting" msprop:Generator_RowEvArgName="TKategorieRowChangeEvent" msprop:Generator_TablePropName="TKategorie" msprop:Generator_RowChangedName="TKategorieRowChanged" msprop:Generator_UserTableName="TKategorie" msprop:Generator_RowChangingName="TKategorieRowChanging" msprop:Generator_RowClassName="TKategorieRow" msprop:Generator_TableClassName="TKategorieDataTable" msprop:Generator_TableVarName="tableTKategorie">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="kategoria" msprop:Generator_UserColumnName="kategoria" msprop:Generator_ColumnPropNameInTable="kategoriaColumn" msprop:Generator_ColumnPropNameInRow="kategoria" msprop:Generator_ColumnVarNameInTable="columnkategoria" type="xs:string" />
+              <xs:element name="kategoria" msprop:Generator_ColumnPropNameInTable="kategoriaColumn" msprop:Generator_ColumnPropNameInRow="kategoria" msprop:Generator_UserColumnName="kategoria" msprop:Generator_ColumnVarNameInTable="columnkategoria" type="xs:string" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TPl_en" msprop:Generator_RowClassName="TPl_enRow" msprop:Generator_RowEvHandlerName="TPl_enRowChangeEventHandler" msprop:Generator_RowDeletedName="TPl_enRowDeleted" msprop:Generator_RowDeletingName="TPl_enRowDeleting" msprop:Generator_RowEvArgName="TPl_enRowChangeEvent" msprop:Generator_TablePropName="TPl_en" msprop:Generator_RowChangedName="TPl_enRowChanged" msprop:Generator_UserTableName="TPl_en" msprop:Generator_RowChangingName="TPl_enRowChanging" msprop:Generator_TableClassName="TPl_enDataTable" msprop:Generator_TableVarName="tableTPl_en">
+        <xs:element name="TDe" msprop:Generator_RowEvHandlerName="TDeRowChangeEventHandler" msprop:Generator_RowDeletedName="TDeRowDeleted" msprop:Generator_RowDeletingName="TDeRowDeleting" msprop:Generator_RowEvArgName="TDeRowChangeEvent" msprop:Generator_TablePropName="TDe" msprop:Generator_RowChangedName="TDeRowChanged" msprop:Generator_UserTableName="TDe" msprop:Generator_RowChangingName="TDeRowChanging" msprop:Generator_RowClassName="TDeRow" msprop:Generator_TableClassName="TDeDataTable" msprop:Generator_TableVarName="tableTDe">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="wyraz" msprop:Generator_UserColumnName="wyraz" msprop:Generator_ColumnPropNameInTable="wyrazColumn" msprop:Generator_ColumnPropNameInRow="wyraz" msprop:Generator_ColumnVarNameInTable="columnwyraz" type="xs:string" minOccurs="0" />
-              <xs:element name="znaczenie" msprop:Generator_UserColumnName="znaczenie" msprop:Generator_ColumnPropNameInTable="znaczenieColumn" msprop:Generator_ColumnPropNameInRow="znaczenie" msprop:Generator_ColumnVarNameInTable="columnznaczenie" type="xs:string" minOccurs="0" />
-              <xs:element name="typ" msprop:Generator_UserColumnName="typ" msprop:Generator_ColumnPropNameInTable="typColumn" msprop:Generator_ColumnPropNameInRow="typ" msprop:Generator_ColumnVarNameInTable="columntyp" type="xs:string" minOccurs="0" />
-              <xs:element name="kategoria" msprop:Generator_UserColumnName="kategoria" msprop:Generator_ColumnPropNameInTable="kategoriaColumn" msprop:Generator_ColumnPropNameInRow="kategoria" msprop:Generator_ColumnVarNameInTable="columnkategoria" type="xs:string" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="TDe" msprop:Generator_RowClassName="TDeRow" msprop:Generator_RowEvHandlerName="TDeRowChangeEventHandler" msprop:Generator_RowDeletedName="TDeRowDeleted" msprop:Generator_RowDeletingName="TDeRowDeleting" msprop:Generator_RowEvArgName="TDeRowChangeEvent" msprop:Generator_TablePropName="TDe" msprop:Generator_RowChangedName="TDeRowChanged" msprop:Generator_UserTableName="TDe" msprop:Generator_RowChangingName="TDeRowChanging" msprop:Generator_TableClassName="TDeDataTable" msprop:Generator_TableVarName="tableTDe">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="wyraz" msprop:Generator_UserColumnName="wyraz" msprop:Generator_ColumnPropNameInTable="wyrazColumn" msprop:Generator_ColumnPropNameInRow="wyraz" msprop:Generator_ColumnVarNameInTable="columnwyraz" type="xs:string" />
-              <xs:element name="znaczenie" msprop:Generator_UserColumnName="znaczenie" msprop:Generator_ColumnPropNameInTable="znaczenieColumn" msprop:Generator_ColumnPropNameInRow="znaczenie" msprop:Generator_ColumnVarNameInTable="columnznaczenie" type="xs:string" minOccurs="0" />
-              <xs:element name="typ" msprop:Generator_UserColumnName="typ" msprop:Generator_ColumnPropNameInTable="typColumn" msprop:Generator_ColumnPropNameInRow="typ" msprop:Generator_ColumnVarNameInTable="columntyp" type="xs:string" minOccurs="0" />
-              <xs:element name="kategoria" msprop:Generator_UserColumnName="kategoria" msprop:Generator_ColumnPropNameInTable="kategoriaColumn" msprop:Generator_ColumnPropNameInRow="kategoria" msprop:Generator_ColumnVarNameInTable="columnkategoria" type="xs:string" minOccurs="0" />
-              <xs:element name="rodzajnik" msprop:Generator_UserColumnName="rodzajnik" msprop:Generator_ColumnPropNameInTable="rodzajnikColumn" msprop:Generator_ColumnPropNameInRow="rodzajnik" msprop:Generator_ColumnVarNameInTable="columnrodzajnik" type="xs:string" minOccurs="0" />
-              <xs:element name="zaimek" msprop:Generator_UserColumnName="zaimek" msprop:Generator_ColumnPropNameInTable="zaimekColumn" msprop:Generator_ColumnPropNameInRow="zaimek" msprop:Generator_ColumnVarNameInTable="columnzaimek" type="xs:string" minOccurs="0" />
-              <xs:element name="przypadek" msprop:Generator_UserColumnName="przypadek" msprop:Generator_ColumnPropNameInTable="przypadekColumn" msprop:Generator_ColumnPropNameInRow="przypadek" msprop:Generator_ColumnVarNameInTable="columnprzypadek" type="xs:string" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="TPl_de" msprop:Generator_RowClassName="TPl_deRow" msprop:Generator_RowEvHandlerName="TPl_deRowChangeEventHandler" msprop:Generator_RowDeletedName="TPl_deRowDeleted" msprop:Generator_RowDeletingName="TPl_deRowDeleting" msprop:Generator_RowEvArgName="TPl_deRowChangeEvent" msprop:Generator_TablePropName="TPl_de" msprop:Generator_RowChangedName="TPl_deRowChanged" msprop:Generator_UserTableName="TPl_de" msprop:Generator_RowChangingName="TPl_deRowChanging" msprop:Generator_TableClassName="TPl_deDataTable" msprop:Generator_TableVarName="tableTPl_de">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="wyraz" msprop:Generator_UserColumnName="wyraz" msprop:Generator_ColumnPropNameInTable="wyrazColumn" msprop:Generator_ColumnPropNameInRow="wyraz" msprop:Generator_ColumnVarNameInTable="columnwyraz" type="xs:string" />
-              <xs:element name="znaczenie" msprop:Generator_UserColumnName="znaczenie" msprop:Generator_ColumnPropNameInTable="znaczenieColumn" msprop:Generator_ColumnPropNameInRow="znaczenie" msprop:Generator_ColumnVarNameInTable="columnznaczenie" type="xs:string" minOccurs="0" />
-              <xs:element name="typ" msprop:Generator_UserColumnName="typ" msprop:Generator_ColumnPropNameInTable="typColumn" msprop:Generator_ColumnPropNameInRow="typ" msprop:Generator_ColumnVarNameInTable="columntyp" type="xs:string" minOccurs="0" />
-              <xs:element name="kategoria" msprop:Generator_UserColumnName="kategoria" msprop:Generator_ColumnPropNameInTable="kategoriaColumn" msprop:Generator_ColumnPropNameInRow="kategoria" msprop:Generator_ColumnVarNameInTable="columnkategoria" type="xs:string" minOccurs="0" />
-              <xs:element name="rodzajnik" msprop:Generator_UserColumnName="rodzajnik" msprop:Generator_ColumnPropNameInTable="rodzajnikColumn" msprop:Generator_ColumnPropNameInRow="rodzajnik" msprop:Generator_ColumnVarNameInTable="columnrodzajnik" type="xs:string" minOccurs="0" />
-              <xs:element name="zaimek" msprop:Generator_UserColumnName="zaimek" msprop:Generator_ColumnPropNameInTable="zaimekColumn" msprop:Generator_ColumnPropNameInRow="zaimek" msprop:Generator_ColumnVarNameInTable="columnzaimek" type="xs:string" minOccurs="0" />
-              <xs:element name="przypadek" msprop:Generator_UserColumnName="przypadek" msprop:Generator_ColumnPropNameInTable="przypadekColumn" msprop:Generator_ColumnPropNameInRow="przypadek" msprop:Generator_ColumnVarNameInTable="columnprzypadek" type="xs:string" minOccurs="0" />
+              <xs:element name="wyraz" msprop:Generator_ColumnPropNameInTable="wyrazColumn" msprop:Generator_ColumnPropNameInRow="wyraz" msprop:Generator_UserColumnName="wyraz" msprop:Generator_ColumnVarNameInTable="columnwyraz" type="xs:string" />
+              <xs:element name="znaczenie" msprop:Generator_ColumnPropNameInTable="znaczenieColumn" msprop:Generator_ColumnPropNameInRow="znaczenie" msprop:Generator_UserColumnName="znaczenie" msprop:Generator_ColumnVarNameInTable="columnznaczenie" type="xs:string" minOccurs="0" />
+              <xs:element name="typ" msprop:Generator_ColumnPropNameInTable="typColumn" msprop:Generator_ColumnPropNameInRow="typ" msprop:Generator_UserColumnName="typ" msprop:Generator_ColumnVarNameInTable="columntyp" type="xs:string" minOccurs="0" />
+              <xs:element name="kategoria" msprop:Generator_ColumnPropNameInTable="kategoriaColumn" msprop:Generator_ColumnPropNameInRow="kategoria" msprop:Generator_UserColumnName="kategoria" msprop:Generator_ColumnVarNameInTable="columnkategoria" type="xs:string" minOccurs="0" />
+              <xs:element name="rodzajnik" msprop:Generator_ColumnPropNameInTable="rodzajnikColumn" msprop:Generator_ColumnPropNameInRow="rodzajnik" msprop:Generator_UserColumnName="rodzajnik" msprop:Generator_ColumnVarNameInTable="columnrodzajnik" type="xs:string" minOccurs="0" />
+              <xs:element name="zaimek" msprop:Generator_ColumnPropNameInTable="zaimekColumn" msprop:Generator_ColumnPropNameInRow="zaimek" msprop:Generator_UserColumnName="zaimek" msprop:Generator_ColumnVarNameInTable="columnzaimek" type="xs:string" minOccurs="0" />
+              <xs:element name="przypadek" msprop:Generator_ColumnPropNameInTable="przypadekColumn" msprop:Generator_ColumnPropNameInRow="przypadek" msprop:Generator_UserColumnName="przypadek" msprop:Generator_ColumnVarNameInTable="columnprzypadek" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -79,17 +56,11 @@
       <xs:selector xpath=".//mstns:TDe" />
       <xs:field xpath="mstns:wyraz" />
     </xs:unique>
-    <xs:unique name="TPl_de_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:TPl_de" />
-      <xs:field xpath="mstns:wyraz" />
-    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="TKategorie_TEn" msdata:parent="TKategorie" msdata:child="TEn" msdata:parentkey="kategoria" msdata:childkey="kategoria" msprop:Generator_UserParentTable="TKategorie" msprop:Generator_UserChildTable="TEn" msprop:Generator_RelationVarName="relationTKategorie_TEn" msprop:Generator_ChildPropName="GetTEnRows" msprop:Generator_ParentPropName="TKategorieRow" msprop:Generator_UserRelationName="TKategorie_TEn" />
-      <msdata:Relationship name="TKategorie_TPl_en" msdata:parent="TKategorie" msdata:child="TPl_en" msdata:parentkey="kategoria" msdata:childkey="kategoria" msprop:Generator_UserParentTable="TKategorie" msprop:Generator_UserChildTable="TPl_en" msprop:Generator_RelationVarName="relationTKategorie_TPl_en" msprop:Generator_ChildPropName="GetTPl_enRows" msprop:Generator_UserRelationName="TKategorie_TPl_en" msprop:Generator_ParentPropName="TKategorieRow" />
-      <msdata:Relationship name="TKategorie_TDe" msdata:parent="TKategorie" msdata:child="TDe" msdata:parentkey="kategoria" msdata:childkey="kategoria" msprop:Generator_UserParentTable="TKategorie" msprop:Generator_UserChildTable="TDe" msprop:Generator_RelationVarName="relationTKategorie_TDe" msprop:Generator_ChildPropName="GetTDeRows" msprop:Generator_UserRelationName="TKategorie_TDe" msprop:Generator_ParentPropName="TKategorieRow" />
-      <msdata:Relationship name="TKategorie_TPl_de" msdata:parent="TKategorie" msdata:child="TPl_de" msdata:parentkey="kategoria" msdata:childkey="kategoria" msprop:Generator_UserParentTable="TKategorie" msprop:Generator_UserChildTable="TPl_de" msprop:Generator_RelationVarName="relationTKategorie_TPl_de" msprop:Generator_ChildPropName="GetTPl_deRows" msprop:Generator_UserRelationName="TKategorie_TPl_de" msprop:Generator_ParentPropName="TKategorieRow" />
+      <msdata:Relationship name="TKategorie_TEn" msdata:parent="TKategorie" msdata:child="TEn" msdata:parentkey="kategoria" msdata:childkey="kategoria" msprop:Generator_UserParentTable="TKategorie" msprop:Generator_UserChildTable="TEn" msprop:Generator_RelationVarName="relationTKategorie_TEn" msprop:Generator_ChildPropName="GetTEnRows" msprop:Generator_UserRelationName="TKategorie_TEn" msprop:Generator_ParentPropName="TKategorieRow" />
+      <msdata:Relationship name="TKategorie_TDe" msdata:parent="TKategorie" msdata:child="TDe" msdata:parentkey="kategoria" msdata:childkey="kategoria" msprop:Generator_UserParentTable="TKategorie" msprop:Generator_UserChildTable="TDe" msprop:Generator_RelationVarName="relationTKategorie_TDe" msprop:Generator_ChildPropName="GetTDeRows" msprop:Generator_ParentPropName="TKategorieRow" msprop:Generator_UserRelationName="TKategorie_TDe" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

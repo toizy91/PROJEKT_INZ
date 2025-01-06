@@ -12,9 +12,12 @@ namespace slownik
 {
     public partial class zarzSlowNiem : Form
     {
-        public zarzSlowNiem()
+        private okno_glowne mainForm;
+        public zarzSlowNiem(okno_glowne form)
         {
             InitializeComponent();
+            mainForm = form;
+            this.FormClosed += new FormClosedEventHandler(zarzSlowNiem_FormClosed); 
         }
         const string FILE_NAME_BASE = "baza.xml";
 
@@ -38,7 +41,8 @@ namespace slownik
             if (dgvSlowa.SelectedRows.Count > 0)
             {
                 btnUsunSlowo.Enabled = true;
-            }else
+            }
+            else
             {
                 btnUsunSlowo.Enabled = false;
             }
@@ -81,20 +85,28 @@ namespace slownik
                             DataRow dr = dsBaza1.TDe.Rows.Find(t);
                             dsBaza1.TDe.Rows.Remove(dr);
                             dsBaza1.WriteXml(FILE_NAME_BASE);
+                            MessageBox.Show(this, "Pomyśłnie usunięto wybraną pozycję!", "Zarządzaj słowami niemieckimi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
-                }else
+                }
+                else
                 {
                     return;
                 }
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show(this, ex.Message,"Wystąpił nieoczekiwany błąd!",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(this, ex.Message, "Wystąpił nieoczekiwany błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
-                MessageBox.Show(this, "Pomyśłnie usunięto wybraną pozycję!", "Zarządzaj słowami niemieckimi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                mainForm.Refresh();
             }
+        }
+
+        private void zarzSlowNiem_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            mainForm.Refresh();
         }
     }
 }

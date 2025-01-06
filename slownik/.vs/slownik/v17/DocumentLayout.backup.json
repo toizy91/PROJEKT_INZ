@@ -1,26 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\",
+  "WorkspaceRootPath": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\PROJEKT_INZ\\slownik\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\PROJEKT_INZ\\slownik\\slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\dodslownie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\dodslownie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\dodslownie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\dodslownie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\slownik\\slownik\\dsbaza.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
-      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\dsbaza.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+      "AbsoluteMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|c:\\users\\tomas\\desktop\\projekt_inz\\projekt_inz\\slownik\\slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{720773A0-0843-4359-8F5D-3B5F71EA0CD4}|slownik\\slownik.csproj|solutionrelative:slownik\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dodSlowNIe.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodSlowNIe.cs",
-              "RelativeDocumentMoniker": "slownik\\dodSlowNIe.cs",
-              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodSlowNIe.cs",
-              "RelativeToolTip": "slownik\\dodSlowNIe.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T14:05:24.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dodSlowNIe.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodSlowNIe.cs",
-              "RelativeDocumentMoniker": "slownik\\dodSlowNIe.cs",
-              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dodSlowNIe.cs [Projekt]",
-              "RelativeToolTip": "slownik\\dodSlowNIe.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T14:05:22.069Z",
-              "EditorCaption": " [Projekt]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs",
               "RelativeDocumentMoniker": "slownik\\Form1.cs",
-              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs [Projekt]",
-              "RelativeToolTip": "slownik\\Form1.cs [Projekt]",
+              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs",
+              "RelativeToolTip": "slownik\\Form1.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAMwHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:36:32.444Z",
-              "EditorCaption": " [Projekt]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "dsBaza.xsd",
-              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dsBaza.xsd",
-              "RelativeDocumentMoniker": "slownik\\dsBaza.xsd",
-              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\dsBaza.xsd",
-              "RelativeToolTip": "slownik\\dsBaza.xsd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2025-01-05T11:34:18.273Z",
+              "WhenOpened": "2025-01-05T11:47:34.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs",
+              "Title": "Form1.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs",
               "RelativeDocumentMoniker": "slownik\\Form1.cs",
-              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs",
-              "RelativeToolTip": "slownik\\Form1.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwDcAAAAwAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\tomas\\Desktop\\PROJEKT_INZ\\PROJEKT_INZ\\slownik\\slownik\\Form1.cs [Projekt]",
+              "RelativeToolTip": "slownik\\Form1.cs [Projekt]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T11:47:34.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-03T15:36:32.444Z",
+              "EditorCaption": " [Projekt]"
             }
           ]
         }
