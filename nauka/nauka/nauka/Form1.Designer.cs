@@ -36,8 +36,9 @@
             // 
             // otworzPlikDial
             // 
+            otworzPlikDial.AddExtension = false;
             otworzPlikDial.DefaultExt = "xml";
-            otworzPlikDial.FileName = "slowa.xml";
+            otworzPlikDial.Filter = "Język angieslki (*.xmla) |*.xmla| Język niemiecki (*.xmln) |*xmln";
             // 
             // dsBaza1
             // 
@@ -50,17 +51,20 @@
             listBox1.DataSource = dsBaza1;
             listBox1.DisplayMember = "TEn.wyraz";
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(61, 61);
+            listBox1.ItemHeight = 25;
+            listBox1.Location = new Point(76, 76);
+            listBox1.Margin = new Padding(4);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(317, 224);
+            listBox1.Size = new Size(395, 279);
             listBox1.TabIndex = 0;
             // 
             // oknoGlowne
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1000, 562);
             Controls.Add(listBox1);
+            Margin = new Padding(4);
             Name = "oknoGlowne";
             Text = "Ucz się słówek";
             Load += oknoGlowne_Load;

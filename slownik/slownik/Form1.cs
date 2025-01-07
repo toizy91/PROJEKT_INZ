@@ -202,5 +202,11 @@ namespace slownik
                 lbSlowa.SelectedIndex = -1;
             }
         }
+
+        private void btnNauka_Click(object sender, EventArgs e)
+        {
+            nakaForm f = new nakaForm();
+            f.ShowDialog();
+        }
     }
 }

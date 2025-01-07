@@ -62,17 +62,19 @@
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(12, 12);
+            panel1.Location = new Point(15, 15);
+            panel1.Margin = new Padding(4, 4, 4, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(491, 244);
+            panel1.Size = new Size(613, 304);
             panel1.TabIndex = 0;
             // 
             // button1
             // 
             button1.ForeColor = Color.Blue;
-            button1.Location = new Point(376, 200);
+            button1.Location = new Point(470, 250);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(118, 36);
             button1.TabIndex = 10;
             button1.Text = "Zamknij";
             button1.UseVisualStyleBackColor = true;
@@ -81,9 +83,10 @@
             // btnCzyscPola
             // 
             btnCzyscPola.ForeColor = Color.Red;
-            btnCzyscPola.Location = new Point(251, 165);
+            btnCzyscPola.Location = new Point(314, 206);
+            btnCzyscPola.Margin = new Padding(4, 4, 4, 4);
             btnCzyscPola.Name = "btnCzyscPola";
-            btnCzyscPola.Size = new Size(94, 29);
+            btnCzyscPola.Size = new Size(118, 36);
             btnCzyscPola.TabIndex = 9;
             btnCzyscPola.Text = "Czyść pola";
             btnCzyscPola.UseVisualStyleBackColor = true;
@@ -91,9 +94,10 @@
             // btnDodajSlowo
             // 
             btnDodajSlowo.ForeColor = Color.FromArgb(0, 192, 0);
-            btnDodajSlowo.Location = new Point(351, 165);
+            btnDodajSlowo.Location = new Point(439, 206);
+            btnDodajSlowo.Margin = new Padding(4, 4, 4, 4);
             btnDodajSlowo.Name = "btnDodajSlowo";
-            btnDodajSlowo.Size = new Size(119, 29);
+            btnDodajSlowo.Size = new Size(149, 36);
             btnDodajSlowo.TabIndex = 8;
             btnDodajSlowo.Text = "Dodaj słowo";
             btnDodajSlowo.UseVisualStyleBackColor = true;
@@ -105,9 +109,10 @@
             cbKategoria.DisplayMember = "TKategorie.kategoria";
             cbKategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             cbKategoria.FormattingEnabled = true;
-            cbKategoria.Location = new Point(184, 118);
+            cbKategoria.Location = new Point(230, 148);
+            cbKategoria.Margin = new Padding(4, 4, 4, 4);
             cbKategoria.Name = "cbKategoria";
-            cbKategoria.Size = new Size(286, 28);
+            cbKategoria.Size = new Size(356, 33);
             cbKategoria.TabIndex = 7;
             // 
             // dsBaza1
@@ -121,61 +126,68 @@
             cbTypSlowa.DropDownStyle = ComboBoxStyle.DropDownList;
             cbTypSlowa.FormattingEnabled = true;
             cbTypSlowa.Items.AddRange(new object[] { "czasownik", "czasownik frazowy", "idiom", "inne", "przymiotnik", "rzeczownik", "zwrot" });
-            cbTypSlowa.Location = new Point(184, 84);
+            cbTypSlowa.Location = new Point(230, 105);
+            cbTypSlowa.Margin = new Padding(4, 4, 4, 4);
             cbTypSlowa.Name = "cbTypSlowa";
-            cbTypSlowa.Size = new Size(286, 28);
+            cbTypSlowa.Size = new Size(356, 33);
             cbTypSlowa.Sorted = true;
             cbTypSlowa.TabIndex = 6;
             // 
             // txtZnaczenie
             // 
-            txtZnaczenie.Location = new Point(184, 51);
+            txtZnaczenie.Location = new Point(230, 64);
+            txtZnaczenie.Margin = new Padding(4, 4, 4, 4);
             txtZnaczenie.Name = "txtZnaczenie";
-            txtZnaczenie.Size = new Size(286, 27);
+            txtZnaczenie.Size = new Size(356, 31);
             txtZnaczenie.TabIndex = 5;
             txtZnaczenie.TextAlign = HorizontalAlignment.Center;
             // 
             // txtWyraz
             // 
-            txtWyraz.Location = new Point(184, 17);
+            txtWyraz.Location = new Point(230, 21);
+            txtWyraz.Margin = new Padding(4, 4, 4, 4);
             txtWyraz.Name = "txtWyraz";
-            txtWyraz.Size = new Size(286, 27);
+            txtWyraz.Size = new Size(356, 31);
             txtWyraz.TabIndex = 4;
             txtWyraz.TextAlign = HorizontalAlignment.Center;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(18, 121);
+            label4.Location = new Point(22, 151);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(77, 20);
+            label4.Size = new Size(91, 25);
             label4.TabIndex = 3;
             label4.Text = "Kategoria:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(18, 87);
+            label3.Location = new Point(22, 109);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(77, 20);
+            label3.Size = new Size(95, 25);
             label3.TabIndex = 2;
             label3.Text = "Typ słowa:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(18, 54);
+            label2.Location = new Point(22, 68);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(146, 20);
+            label2.Size = new Size(174, 25);
             label2.TabIndex = 1;
             label2.Text = "Tłumaczenie polskie:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(18, 20);
+            label1.Location = new Point(22, 25);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(123, 20);
+            label1.Size = new Size(148, 25);
             label1.TabIndex = 0;
             label1.Text = "Słowo angielskie:";
             // 
@@ -186,15 +198,16 @@
             // 
             // dodajSlowoForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(518, 265);
+            ClientSize = new Size(642, 334);
             Controls.Add(panel1);
+            Margin = new Padding(4, 4, 4, 4);
             MaximizeBox = false;
-            MaximumSize = new Size(536, 312);
+            MaximumSize = new Size(664, 390);
             MinimizeBox = false;
-            MinimumSize = new Size(536, 312);
+            MinimumSize = new Size(664, 390);
             Name = "dodajSlowoForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Dodaj słowo angielskie";

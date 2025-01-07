@@ -32,6 +32,7 @@
             panel1 = new Panel();
             txtWyszukaj = new TextBox();
             panel2 = new Panel();
+            btnNauka = new Button();
             lbSlowa = new ListBox();
             panel3 = new Panel();
             btnZarzKat = new Button();
@@ -69,16 +70,18 @@
             panel1.BackColor = Color.White;
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(txtWyszukaj);
-            panel1.Location = new Point(12, 159);
+            panel1.Location = new Point(15, 199);
+            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(354, 57);
+            panel1.Size = new Size(442, 71);
             panel1.TabIndex = 1;
             // 
             // txtWyszukaj
             // 
-            txtWyszukaj.Location = new Point(16, 12);
+            txtWyszukaj.Location = new Point(20, 15);
+            txtWyszukaj.Margin = new Padding(4);
             txtWyszukaj.Name = "txtWyszukaj";
-            txtWyszukaj.Size = new Size(320, 27);
+            txtWyszukaj.Size = new Size(399, 31);
             txtWyszukaj.TabIndex = 0;
             txtWyszukaj.TextAlign = HorizontalAlignment.Center;
             txtWyszukaj.KeyDown += txtWyszukaj_KeyDown;
@@ -88,11 +91,24 @@
             // 
             panel2.BackColor = Color.White;
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(btnNauka);
             panel2.Controls.Add(lbSlowa);
-            panel2.Location = new Point(12, 222);
+            panel2.Location = new Point(15, 278);
+            panel2.Margin = new Padding(4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(354, 350);
+            panel2.Size = new Size(442, 437);
             panel2.TabIndex = 2;
+            // 
+            // btnNauka
+            // 
+            btnNauka.ForeColor = Color.Purple;
+            btnNauka.Location = new Point(20, 383);
+            btnNauka.Name = "btnNauka";
+            btnNauka.Size = new Size(399, 34);
+            btnNauka.TabIndex = 1;
+            btnNauka.Text = "Nauka słów..";
+            btnNauka.UseVisualStyleBackColor = true;
+            btnNauka.Click += btnNauka_Click;
             // 
             // lbSlowa
             // 
@@ -100,10 +116,11 @@
             lbSlowa.DataSource = dsBaza1;
             lbSlowa.DisplayMember = "TEn.wyraz";
             lbSlowa.FormattingEnabled = true;
-            lbSlowa.Location = new Point(16, 16);
+            lbSlowa.ItemHeight = 25;
+            lbSlowa.Location = new Point(20, 20);
             lbSlowa.Margin = new Padding(2);
             lbSlowa.Name = "lbSlowa";
-            lbSlowa.Size = new Size(320, 304);
+            lbSlowa.Size = new Size(399, 329);
             lbSlowa.Sorted = true;
             lbSlowa.TabIndex = 0;
             lbSlowa.SelectedIndexChanged += lbSlowa_SelectedIndexChanged;
@@ -114,17 +131,19 @@
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(btnZarzKat);
             panel3.Controls.Add(btnZarzSlow);
-            panel3.Location = new Point(12, 12);
+            panel3.Location = new Point(15, 15);
+            panel3.Margin = new Padding(4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(354, 70);
+            panel3.Size = new Size(442, 87);
             panel3.TabIndex = 3;
             // 
             // btnZarzKat
             // 
             btnZarzKat.ForeColor = Color.Blue;
-            btnZarzKat.Location = new Point(174, 19);
+            btnZarzKat.Location = new Point(218, 24);
+            btnZarzKat.Margin = new Padding(4);
             btnZarzKat.Name = "btnZarzKat";
-            btnZarzKat.Size = new Size(162, 29);
+            btnZarzKat.Size = new Size(202, 36);
             btnZarzKat.TabIndex = 1;
             btnZarzKat.Text = "Kategorie..";
             btnZarzKat.UseVisualStyleBackColor = true;
@@ -133,9 +152,10 @@
             // btnZarzSlow
             // 
             btnZarzSlow.ForeColor = Color.Green;
-            btnZarzSlow.Location = new Point(16, 19);
+            btnZarzSlow.Location = new Point(20, 24);
+            btnZarzSlow.Margin = new Padding(4);
             btnZarzSlow.Name = "btnZarzSlow";
-            btnZarzSlow.Size = new Size(137, 29);
+            btnZarzSlow.Size = new Size(171, 36);
             btnZarzSlow.TabIndex = 0;
             btnZarzSlow.Text = "Słowa..";
             btnZarzSlow.UseVisualStyleBackColor = true;
@@ -149,17 +169,19 @@
             panel4.Controls.Add(rbDePl);
             panel4.Controls.Add(rbPlEn);
             panel4.Controls.Add(rbEnPl);
-            panel4.Location = new Point(12, 88);
+            panel4.Location = new Point(15, 110);
+            panel4.Margin = new Padding(4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(354, 65);
+            panel4.Size = new Size(442, 81);
             panel4.TabIndex = 4;
             // 
             // rbPlDe
             // 
             rbPlDe.AutoSize = true;
-            rbPlDe.Location = new Point(268, 20);
+            rbPlDe.Location = new Point(335, 25);
+            rbPlDe.Margin = new Padding(4);
             rbPlDe.Name = "rbPlDe";
-            rbPlDe.Size = new Size(78, 24);
+            rbPlDe.Size = new Size(94, 29);
             rbPlDe.TabIndex = 3;
             rbPlDe.Text = "PL - DE";
             rbPlDe.UseVisualStyleBackColor = true;
@@ -168,9 +190,10 @@
             // rbDePl
             // 
             rbDePl.AutoSize = true;
-            rbDePl.Location = new Point(184, 20);
+            rbDePl.Location = new Point(230, 25);
+            rbDePl.Margin = new Padding(4);
             rbDePl.Name = "rbDePl";
-            rbDePl.Size = new Size(78, 24);
+            rbDePl.Size = new Size(94, 29);
             rbDePl.TabIndex = 2;
             rbDePl.Text = "DE - PL";
             rbDePl.UseVisualStyleBackColor = true;
@@ -179,9 +202,10 @@
             // rbPlEn
             // 
             rbPlEn.AutoSize = true;
-            rbPlEn.Location = new Point(100, 20);
+            rbPlEn.Location = new Point(125, 25);
+            rbPlEn.Margin = new Padding(4);
             rbPlEn.Name = "rbPlEn";
-            rbPlEn.Size = new Size(78, 24);
+            rbPlEn.Size = new Size(94, 29);
             rbPlEn.TabIndex = 1;
             rbPlEn.Text = "PL - EN";
             rbPlEn.UseVisualStyleBackColor = true;
@@ -191,9 +215,10 @@
             // 
             rbEnPl.AutoSize = true;
             rbEnPl.Checked = true;
-            rbEnPl.Location = new Point(16, 20);
+            rbEnPl.Location = new Point(20, 25);
+            rbEnPl.Margin = new Padding(4);
             rbEnPl.Name = "rbEnPl";
-            rbEnPl.Size = new Size(78, 24);
+            rbEnPl.Size = new Size(94, 29);
             rbEnPl.TabIndex = 0;
             rbEnPl.TabStop = true;
             rbEnPl.Text = "EN - PL";
@@ -204,9 +229,10 @@
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel5, toolStripStatusLabel1, toolStripStatusLabel2, toolStripStatusLabel3, toolStripStatusLabel4 });
-            statusStrip1.Location = new Point(0, 809);
+            statusStrip1.Location = new Point(0, 1002);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(379, 30);
+            statusStrip1.Padding = new Padding(1, 0, 18, 0);
+            statusStrip1.Size = new Size(469, 36);
             statusStrip1.TabIndex = 5;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -215,28 +241,28 @@
             toolStripStatusLabel5.BackColor = Color.White;
             toolStripStatusLabel5.BorderSides = ToolStripStatusLabelBorderSides.Right;
             toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            toolStripStatusLabel5.Size = new Size(159, 24);
+            toolStripStatusLabel5.Size = new Size(188, 29);
             toolStripStatusLabel5.Text = "Elementów na liście: 0";
             // 
             // toolStripStatusLabel1
             // 
             toolStripStatusLabel1.BackColor = Color.White;
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(50, 24);
+            toolStripStatusLabel1.Size = new Size(62, 29);
             toolStripStatusLabel1.Text = "F1 = ä";
             // 
             // toolStripStatusLabel2
             // 
             toolStripStatusLabel2.BackColor = Color.White;
             toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            toolStripStatusLabel2.Size = new Size(50, 24);
+            toolStripStatusLabel2.Size = new Size(63, 29);
             toolStripStatusLabel2.Text = "F2 = ß";
             // 
             // toolStripStatusLabel3
             // 
             toolStripStatusLabel3.BackColor = Color.White;
             toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            toolStripStatusLabel3.Size = new Size(51, 24);
+            toolStripStatusLabel3.Size = new Size(64, 29);
             toolStripStatusLabel3.Text = "F3 = ö";
             // 
             // toolStripStatusLabel4
@@ -244,7 +270,7 @@
             toolStripStatusLabel4.BackColor = Color.White;
             toolStripStatusLabel4.BorderSides = ToolStripStatusLabelBorderSides.Right;
             toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            toolStripStatusLabel4.Size = new Size(54, 24);
+            toolStripStatusLabel4.Size = new Size(67, 29);
             toolStripStatusLabel4.Text = "F4 = ü";
             // 
             // panel5
@@ -252,9 +278,10 @@
             panel5.BackColor = Color.White;
             panel5.BorderStyle = BorderStyle.FixedSingle;
             panel5.Controls.Add(rtxOpis);
-            panel5.Location = new Point(12, 578);
+            panel5.Location = new Point(15, 722);
+            panel5.Margin = new Padding(4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(354, 217);
+            panel5.Size = new Size(442, 271);
             panel5.TabIndex = 7;
             // 
             // rtxOpis
@@ -263,31 +290,33 @@
             rtxOpis.BorderStyle = BorderStyle.None;
             rtxOpis.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 238);
             rtxOpis.ForeColor = Color.Red;
-            rtxOpis.Location = new Point(16, 18);
+            rtxOpis.Location = new Point(20, 22);
+            rtxOpis.Margin = new Padding(4);
             rtxOpis.Name = "rtxOpis";
             rtxOpis.ReadOnly = true;
-            rtxOpis.Size = new Size(320, 180);
+            rtxOpis.Size = new Size(400, 225);
             rtxOpis.TabIndex = 7;
             rtxOpis.Text = "";
             // 
             // okno_glowne
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(379, 839);
+            ClientSize = new Size(469, 1038);
             Controls.Add(panel5);
             Controls.Add(statusStrip1);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(4);
             MaximizeBox = false;
-            MaximumSize = new Size(397, 886);
-            MinimumSize = new Size(397, 886);
+            MaximumSize = new Size(491, 1094);
+            MinimumSize = new Size(491, 1094);
             Name = "okno_glowne";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Słownik";
+            Text = "Słownik języka angielskiego i niemieckiego";
             Load += okno_glowne_Load;
             ((System.ComponentModel.ISupportInitialize)dsBaza1).EndInit();
             panel1.ResumeLayout(false);
@@ -325,5 +354,6 @@
         private ToolStripStatusLabel toolStripStatusLabel5;
         private Panel panel5;
         private RichTextBox rtxOpis;
+        private Button btnNauka;
     }
 }

@@ -14,7 +14,9 @@ namespace nauka
                 string filename = otworzPlikDial.FileName;
                 MessageBox.Show(filename);
                 dsBaza1.ReadXml(filename);
-
+            }else
+            {
+                Application.Exit();
             }
         }
     }

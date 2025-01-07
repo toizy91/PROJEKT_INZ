@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<dsBazaDe xmlns="http://tempuri.org/dsBazaDe.xsd">
+  <TDe>
+    <wyraz>Achtung</wyraz>
+    <znaczenie>uwaga</znaczenie>
+    <rodzajnik>die</rodzajnik>
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Essen</wyraz>
+    <znaczenie>jeść z</znaczenie>
+    <rodzajnik>das</rodzajnik>
+    <zaimek>aus</zaimek>
+    <przypadek>Gen.</przypadek>
+  </TDe>
+</dsBazaDe>

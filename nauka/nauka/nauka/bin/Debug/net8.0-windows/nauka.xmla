@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<dsBazaEn xmlns="http://tempuri.org/dsBazaEn.xsd">
+  <TEn>
+    <wyraz>window</wyraz>
+    <znaczenie>okno</znaczenie>
+  </TEn>
+  <TEn>
+    <wyraz>mum</wyraz>
+    <znaczenie>mama</znaczenie>
+  </TEn>
+</dsBazaEn>

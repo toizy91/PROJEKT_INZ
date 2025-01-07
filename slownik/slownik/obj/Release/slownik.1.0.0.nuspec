@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>slownik</id>
+    <version>1.0.0</version>
+    <title>Słownik języka angielskiego i niemieckiego</title>
+    <authors>Tomasz Izydorczyk</authors>
+    <description>Package Description</description>
+    <copyright>Wszelkie prawa zastrzeżone</copyright>
+    <repository type="git" commit="493781b35e5cac73c2d21a7a5c617ba719d83f5a" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net8.0-windows7.0/slownikEn_Icon2.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\bin\Release\net8.0-windows\slownik.runtimeconfig.json" target="lib\net8.0-windows7.0\slownik.runtimeconfig.json" />
+    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\bin\Release\net8.0-windows\slownik.dll" target="lib\net8.0-windows7.0\slownik.dll" />
+    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\slownikEn_Icon2.ico" target="content\slownikEn_Icon2.ico" />
+    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\slownikEn_Icon2.ico" target="contentFiles\any\net8.0-windows7.0\slownikEn_Icon2.ico" />
+  </files>
+</package>

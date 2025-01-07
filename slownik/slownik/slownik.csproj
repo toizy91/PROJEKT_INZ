@@ -10,7 +10,24 @@
     <Authors>Tomasz Izydorczyk</Authors>
     <Title>Słownik języka angielskiego i niemieckiego</Title>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <ApplicationIcon>slownikEn_Icon2.ico</ApplicationIcon>
+    <Product>Słownik języka angielskiego i niemieckiego</Product>
+    <Copyright>Wszelkie prawa zastrzeżone</Copyright>
+    <NeutralLanguage>pl</NeutralLanguage>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="slownikEn_Icon2.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="dsBaza.Designer.cs">
@@ -18,10 +35,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>dsBaza.xsd</DependentUpon>
     </Compile>
+    <Compile Update="dsBazaDe.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsBazaDe.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="dsBazaEn.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsBazaEn.xsd</DependentUpon>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -36,6 +68,18 @@
     <None Update="dsBaza.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>dsBaza.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="dsBazaDe.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBazaDe.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="dsBazaEn.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBazaEn.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

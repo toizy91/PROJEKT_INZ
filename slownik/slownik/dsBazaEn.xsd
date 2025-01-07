@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBazaEn" targetNamespace="http://tempuri.org/dsBazaEn.xsd" xmlns:mstns="http://tempuri.org/dsBazaEn.xsd" xmlns="http://tempuri.org/dsBazaEn.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBazaEn" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="dsBazaEn" msprop:Generator_DataSetName="dsBazaEn">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TEn" msprop:Generator_RowEvHandlerName="TEnRowChangeEventHandler" msprop:Generator_RowDeletedName="TEnRowDeleted" msprop:Generator_RowDeletingName="TEnRowDeleting" msprop:Generator_RowEvArgName="TEnRowChangeEvent" msprop:Generator_TablePropName="TEn" msprop:Generator_RowChangedName="TEnRowChanged" msprop:Generator_RowChangingName="TEnRowChanging" msprop:Generator_TableClassName="TEnDataTable" msprop:Generator_RowClassName="TEnRow" msprop:Generator_TableVarName="tableTEn" msprop:Generator_UserTableName="TEn">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wyraz" msprop:Generator_ColumnPropNameInRow="wyraz" msprop:Generator_ColumnPropNameInTable="wyrazColumn" msprop:Generator_ColumnVarNameInTable="columnwyraz" msprop:Generator_UserColumnName="wyraz" type="xs:string" />
+              <xs:element name="znaczenie" msprop:Generator_ColumnPropNameInRow="znaczenie" msprop:Generator_ColumnPropNameInTable="znaczenieColumn" msprop:Generator_ColumnVarNameInTable="columnznaczenie" msprop:Generator_UserColumnName="znaczenie" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TEn" />
+      <xs:field xpath="mstns:wyraz" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

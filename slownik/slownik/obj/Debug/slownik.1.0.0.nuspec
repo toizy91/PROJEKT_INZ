@@ -6,7 +6,8 @@
     <title>Słownik języka angielskiego i niemieckiego</title>
     <authors>Tomasz Izydorczyk</authors>
     <description>Package Description</description>
-    <repository type="git" commit="8c3cd017c2df0b80af56854488a7e0357ca1ff60" />
+    <copyright>Wszelkie prawa zastrzeżone</copyright>
+    <repository type="git" commit="493781b35e5cac73c2d21a7a5c617ba719d83f5a" />
     <dependencies>
       <group targetFramework="net8.0-windows7.0" />
     </dependencies>
@@ -15,9 +16,14 @@
         <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
       </group>
     </frameworkReferences>
+    <contentFiles>
+      <files include="any/net8.0-windows7.0/slownikEn_Icon2.ico" buildAction="Content" />
+    </contentFiles>
   </metadata>
   <files>
-    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\slownik\slownik\bin\Debug\net8.0-windows\slownik.runtimeconfig.json" target="lib\net8.0-windows7.0\slownik.runtimeconfig.json" />
-    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\slownik\slownik\bin\Debug\net8.0-windows\slownik.dll" target="lib\net8.0-windows7.0\slownik.dll" />
+    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\bin\Debug\net8.0-windows\slownik.runtimeconfig.json" target="lib\net8.0-windows7.0\slownik.runtimeconfig.json" />
+    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\bin\Debug\net8.0-windows\slownik.dll" target="lib\net8.0-windows7.0\slownik.dll" />
+    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\slownikEn_Icon2.ico" target="content\slownikEn_Icon2.ico" />
+    <file src="C:\Users\tomas\Desktop\PROJEKT_INZ\slownik\slownik\slownikEn_Icon2.ico" target="contentFiles\any\net8.0-windows7.0\slownikEn_Icon2.ico" />
   </files>
 </package>

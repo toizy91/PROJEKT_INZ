@@ -54,17 +54,19 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(txtNowaKategoria);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(12, 12);
+            panel1.Location = new Point(15, 15);
+            panel1.Margin = new Padding(4, 4, 4, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(551, 144);
+            panel1.Size = new Size(688, 180);
             panel1.TabIndex = 0;
             // 
             // button1
             // 
             button1.ForeColor = Color.Blue;
-            button1.Location = new Point(438, 97);
+            button1.Location = new Point(548, 121);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(118, 36);
             button1.TabIndex = 6;
             button1.Text = "Zamknij";
             button1.UseVisualStyleBackColor = true;
@@ -74,9 +76,10 @@
             // 
             btnDodajKategorie.BackColor = Color.White;
             btnDodajKategorie.ForeColor = Color.FromArgb(0, 192, 0);
-            btnDodajKategorie.Location = new Point(378, 15);
+            btnDodajKategorie.Location = new Point(472, 19);
+            btnDodajKategorie.Margin = new Padding(4, 4, 4, 4);
             btnDodajKategorie.Name = "btnDodajKategorie";
-            btnDodajKategorie.Size = new Size(154, 29);
+            btnDodajKategorie.Size = new Size(192, 36);
             btnDodajKategorie.TabIndex = 5;
             btnDodajKategorie.Text = "Dodaj kategorię";
             btnDodajKategorie.UseVisualStyleBackColor = false;
@@ -85,9 +88,10 @@
             // btnUsunKategorie
             // 
             btnUsunKategorie.ForeColor = Color.Red;
-            btnUsunKategorie.Location = new Point(378, 50);
+            btnUsunKategorie.Location = new Point(472, 62);
+            btnUsunKategorie.Margin = new Padding(4, 4, 4, 4);
             btnUsunKategorie.Name = "btnUsunKategorie";
-            btnUsunKategorie.Size = new Size(154, 29);
+            btnUsunKategorie.Size = new Size(192, 36);
             btnUsunKategorie.TabIndex = 4;
             btnUsunKategorie.Text = "Usuń kategorię";
             btnUsunKategorie.UseVisualStyleBackColor = true;
@@ -98,9 +102,10 @@
             cbKategorie.DataSource = dsBaza1;
             cbKategorie.DisplayMember = "TKategorie.kategoria";
             cbKategorie.FormattingEnabled = true;
-            cbKategorie.Location = new Point(166, 50);
+            cbKategorie.Location = new Point(208, 62);
+            cbKategorie.Margin = new Padding(4, 4, 4, 4);
             cbKategorie.Name = "cbKategorie";
-            cbKategorie.Size = new Size(206, 28);
+            cbKategorie.Size = new Size(256, 33);
             cbKategorie.TabIndex = 3;
             // 
             // dsBaza1
@@ -112,26 +117,29 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(17, 53);
+            label2.Location = new Point(21, 66);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(143, 20);
+            label2.Size = new Size(172, 25);
             label2.TabIndex = 2;
             label2.Text = "Dostępne kategorie:";
             // 
             // txtNowaKategoria
             // 
-            txtNowaKategoria.Location = new Point(141, 13);
+            txtNowaKategoria.Location = new Point(176, 16);
+            txtNowaKategoria.Margin = new Padding(4, 4, 4, 4);
             txtNowaKategoria.Name = "txtNowaKategoria";
-            txtNowaKategoria.Size = new Size(231, 27);
+            txtNowaKategoria.Size = new Size(288, 31);
             txtNowaKategoria.TabIndex = 1;
             txtNowaKategoria.TextAlign = HorizontalAlignment.Center;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(17, 16);
+            label1.Location = new Point(21, 20);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(118, 20);
+            label1.Size = new Size(141, 25);
             label1.TabIndex = 0;
             label1.Text = "Nowa kategoria:";
             // 
@@ -142,16 +150,17 @@
             // 
             // DK_form
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(576, 167);
+            ClientSize = new Size(715, 209);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(4, 4, 4, 4);
             MaximizeBox = false;
-            MaximumSize = new Size(594, 214);
+            MaximumSize = new Size(737, 265);
             MinimizeBox = false;
-            MinimumSize = new Size(594, 214);
+            MinimumSize = new Size(737, 265);
             Name = "DK_form";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Zarządzaj kategoriami";

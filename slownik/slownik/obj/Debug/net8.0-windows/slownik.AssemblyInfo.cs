@@ -13,11 +13,13 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tomasz Izydorczyk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Wszelkie prawa zastrzeżone")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c3cd017c2df0b80af56854488a7e0357ca1ff60")]
-[assembly: System.Reflection.AssemblyProductAttribute("slownik")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+493781b35e5cac73c2d21a7a5c617ba719d83f5a")]
+[assembly: System.Reflection.AssemblyProductAttribute("Słownik języka angielskiego i niemieckiego")]
 [assembly: System.Reflection.AssemblyTitleAttribute("slownik")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Resources.NeutralResourcesLanguageAttribute("pl")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 
