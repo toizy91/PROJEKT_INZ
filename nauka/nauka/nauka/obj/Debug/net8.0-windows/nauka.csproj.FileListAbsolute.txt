@@ -1,0 +1,17 @@
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\bin\Debug\net8.0-windows\nauka.exe
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\bin\Debug\net8.0-windows\nauka.deps.json
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\bin\Debug\net8.0-windows\nauka.runtimeconfig.json
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\bin\Debug\net8.0-windows\nauka.dll
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\bin\Debug\net8.0-windows\nauka.pdb
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\nauka.oknoGlowne.resources
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\nauka.csproj.GenerateResource.cache
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\nauka.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\nauka.AssemblyInfoInputs.cache
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\nauka.AssemblyInfo.cs
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\nauka.csproj.CoreCompileInputs.cache
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\nauka.sourcelink.json
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\nauka.dll
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\refint\nauka.dll
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\nauka.pdb
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\nauka.genruntimeconfig.cache
+C:\Users\tomas\Desktop\PROJEKT_INZ\PROJEKT_INZ\nauka\nauka\nauka\obj\Debug\net8.0-windows\ref\nauka.dll
