@@ -6,7 +6,7 @@
     <title>Słownik języka angielskiego i niemieckiego</title>
     <authors>Tomasz Izydorczyk</authors>
     <description>Package Description</description>
-    <repository type="git" commit="499f2a45535e0e0ae59af06e2f4d94f8effeb534" />
+    <repository type="git" commit="8c3cd017c2df0b80af56854488a7e0357ca1ff60" />
     <dependencies>
       <group targetFramework="net8.0-windows7.0" />
     </dependencies>

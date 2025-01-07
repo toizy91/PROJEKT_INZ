@@ -80,9 +80,9 @@
             txtWyszukaj.Name = "txtWyszukaj";
             txtWyszukaj.Size = new Size(320, 27);
             txtWyszukaj.TabIndex = 0;
-            txtWyszukaj.Text = "Wyszukaj słowo";
             txtWyszukaj.TextAlign = HorizontalAlignment.Center;
             txtWyszukaj.KeyDown += txtWyszukaj_KeyDown;
+            txtWyszukaj.KeyPress += txtWyszukaj_KeyPress;
             // 
             // panel2
             // 
@@ -204,7 +204,7 @@
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel5, toolStripStatusLabel1, toolStripStatusLabel2, toolStripStatusLabel3, toolStripStatusLabel4 });
-            statusStrip1.Location = new Point(0, 767);
+            statusStrip1.Location = new Point(0, 809);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Size = new Size(379, 30);
             statusStrip1.TabIndex = 5;
@@ -254,7 +254,7 @@
             panel5.Controls.Add(rtxOpis);
             panel5.Location = new Point(12, 578);
             panel5.Name = "panel5";
-            panel5.Size = new Size(354, 170);
+            panel5.Size = new Size(354, 217);
             panel5.TabIndex = 7;
             // 
             // rtxOpis
@@ -266,7 +266,7 @@
             rtxOpis.Location = new Point(16, 18);
             rtxOpis.Name = "rtxOpis";
             rtxOpis.ReadOnly = true;
-            rtxOpis.Size = new Size(320, 131);
+            rtxOpis.Size = new Size(320, 180);
             rtxOpis.TabIndex = 7;
             rtxOpis.Text = "";
             // 
@@ -275,7 +275,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(379, 797);
+            ClientSize = new Size(379, 839);
             Controls.Add(panel5);
             Controls.Add(statusStrip1);
             Controls.Add(panel4);
@@ -283,9 +283,11 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             MaximizeBox = false;
+            MaximumSize = new Size(397, 886);
+            MinimumSize = new Size(397, 886);
             Name = "okno_glowne";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "okno_gl_form";
+            Text = "Słownik";
             Load += okno_glowne_Load;
             ((System.ComponentModel.ISupportInitialize)dsBaza1).EndInit();
             panel1.ResumeLayout(false);

@@ -33,4 +33,22 @@
     <zaimek />
     <przypadek />
   </TDe>
+  <TDe>
+    <wyraz>Achtung</wyraz>
+    <znaczenie>uwaga</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>inne</kategoria>
+    <rodzajnik>die</rodzajnik>
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Essen</wyraz>
+    <znaczenie>jeść z</znaczenie>
+    <typ>rekcja rzeczownika</typ>
+    <kategoria>inne</kategoria>
+    <rodzajnik>das</rodzajnik>
+    <zaimek>aus</zaimek>
+    <przypadek>Gen.</przypadek>
+  </TDe>
 </dsBaza>

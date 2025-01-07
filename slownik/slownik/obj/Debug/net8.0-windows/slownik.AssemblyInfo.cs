@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tomasz Izydorczyk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+499f2a45535e0e0ae59af06e2f4d94f8effeb534")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c3cd017c2df0b80af56854488a7e0357ca1ff60")]
 [assembly: System.Reflection.AssemblyProductAttribute("slownik")]
 [assembly: System.Reflection.AssemblyTitleAttribute("slownik")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

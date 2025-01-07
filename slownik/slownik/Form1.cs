@@ -35,11 +35,12 @@ namespace slownik
         {
             TYP_SLOWNIKA = 0;
             dsBaza1.Clear();
-            if(File.Exists(FILE_NAME_BASE))
+            if (File.Exists(FILE_NAME_BASE))
                 dsBaza1.ReadXml(FILE_NAME_BASE);
 
             lbSlowa.DataSource = dsBaza1.TEn;
             lbSlowa.DisplayMember = "wyraz";
+            lbSlowa.SelectedIndex = -1;
         }
 
         private void rbPlEn_CheckedChanged(object sender, EventArgs e)
@@ -51,7 +52,7 @@ namespace slownik
 
             lbSlowa.DataSource = dsBaza1.TEn;
             lbSlowa.DisplayMember = "znaczenie";
-
+            lbSlowa.SelectedIndex = -1;
         }
 
         private void rbDePl_CheckedChanged(object sender, EventArgs e)
@@ -63,6 +64,7 @@ namespace slownik
 
             lbSlowa.DataSource = dsBaza1.TDe;
             lbSlowa.DisplayMember = "wyraz";
+            lbSlowa.SelectedIndex = -1;
         }
 
         private void rbPlDe_CheckedChanged(object sender, EventArgs e)
@@ -74,6 +76,7 @@ namespace slownik
 
             lbSlowa.DataSource = dsBaza1.TDe;
             lbSlowa.DisplayMember = "znaczenie";
+            lbSlowa.SelectedIndex = -1;
         }
 
         private void okno_glowne_Load(object sender, EventArgs e)
@@ -133,7 +136,7 @@ namespace slownik
             rtxOpis.Clear();
             if (lbSlowa.SelectedIndex > -1)
             {
-                if (TYP_SLOWNIKA == 0)
+                if (TYP_SLOWNIKA == 0) //en - pl
                 {
                     DataRowView drV = (DataRowView)lbSlowa.SelectedItem;
                     rtxOpis.Lines = new string[]
@@ -143,8 +146,9 @@ namespace slownik
                         "Typ s這wa: "+drV.Row[2].ToString()+"\n"+
                         "Kategoria: "+drV.Row[3].ToString()
                 };
-                }else
-                if (TYP_SLOWNIKA == 1)
+                }
+                else
+                if (TYP_SLOWNIKA == 1) //pl - en
                 {
                     DataRowView drV = (DataRowView)lbSlowa.SelectedItem;
                     rtxOpis.Lines = new string[]
@@ -155,6 +159,47 @@ namespace slownik
                         "Kategoria: "+drV.Row[3].ToString()
                 };
                 }
+                else
+            if (TYP_SLOWNIKA == 2) //de - pl
+                {
+                    DataRowView drV = (DataRowView)lbSlowa.SelectedItem;
+                    rtxOpis.Lines = new string[]
+                    {
+                        "S這wo: "+drV.Row[4].ToString() +" "+ drV.Row[0].ToString()+"\n"+
+                        "Zaimek: "+drV.Row[5].ToString()+" "+
+                         drV.Row[6].ToString()+"\n"+
+                        "T逝maczenie: "+drV.Row[1].ToString()+"\n"+
+                        "Typ s這wa: "+drV.Row[2].ToString()+"\n"+
+                        "Kategoria: "+drV.Row[3].ToString()
+                };
+                }
+                else
+            if (TYP_SLOWNIKA == 3) //pl - de
+                {
+                    DataRowView drV = (DataRowView)lbSlowa.SelectedItem;
+                    rtxOpis.Lines = new string[]
+                    {
+                        "S這wo: "+ drV.Row[1].ToString()+"\n"+
+                        "Zaimek: "+drV.Row[5].ToString()+"\n"+
+                         "Przypadek: "+drV.Row[6].ToString()+"\n"+
+                        "T逝maczenie: "+drV.Row[4].ToString()+" "+drV.Row[0].ToString()+"\n"+
+                        "Typ s這wa: "+drV.Row[2].ToString()+"\n"+
+                        "Kategoria: "+drV.Row[3].ToString()
+                };
+                }
+            }
+        }
+
+        private void txtWyszukaj_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            int i = lbSlowa.FindString(txtWyszukaj.Text);
+            if (i >= 0)
+            {
+                lbSlowa.SelectedIndex = i;
+            }
+            else
+            {
+                lbSlowa.SelectedIndex = -1;
             }
         }
     }

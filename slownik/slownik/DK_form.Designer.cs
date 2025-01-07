@@ -45,6 +45,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.White;
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(button1);
             panel1.Controls.Add(btnDodajKategorie);
@@ -60,6 +61,7 @@
             // 
             // button1
             // 
+            button1.ForeColor = Color.Blue;
             button1.Location = new Point(438, 97);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
@@ -70,16 +72,19 @@
             // 
             // btnDodajKategorie
             // 
+            btnDodajKategorie.BackColor = Color.White;
+            btnDodajKategorie.ForeColor = Color.FromArgb(0, 192, 0);
             btnDodajKategorie.Location = new Point(378, 15);
             btnDodajKategorie.Name = "btnDodajKategorie";
             btnDodajKategorie.Size = new Size(154, 29);
             btnDodajKategorie.TabIndex = 5;
             btnDodajKategorie.Text = "Dodaj kategorię";
-            btnDodajKategorie.UseVisualStyleBackColor = true;
+            btnDodajKategorie.UseVisualStyleBackColor = false;
             btnDodajKategorie.Click += btnDodajKategorie_Click;
             // 
             // btnUsunKategorie
             // 
+            btnUsunKategorie.ForeColor = Color.Red;
             btnUsunKategorie.Location = new Point(378, 50);
             btnUsunKategorie.Name = "btnUsunKategorie";
             btnUsunKategorie.Size = new Size(154, 29);
@@ -139,6 +144,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(576, 167);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;

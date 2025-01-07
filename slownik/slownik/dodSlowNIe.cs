@@ -100,17 +100,19 @@ namespace slownik
 
         private void btnDodajSlowo_Click(object sender, EventArgs e)
         {
-            if (cbRodzajnik.Enabled == true)
-            {
-                string t = txtWyraz.Text.Trim();
-                t = char.ToUpper(t[0]) + t.Substring(1);
-                txtWyraz.Text = t;
-            }
+            
 
             try
             {
                 if (dsBaza1.TDe.Rows.Find(txtWyraz.Text.Trim()) == null)
                 {
+                    if (cbRodzajnik.Enabled == true)
+                    {
+                        string t = txtWyraz.Text.Trim();
+                        t = char.ToUpper(t[0]) + t.Substring(1);
+                        txtWyraz.Text = t;
+                    }
+
                     DataRow dr = dsBaza1.TDe.NewRow();
                     dr["wyraz"] = txtWyraz.Text.Trim();
                     dr["znaczenie"] = txtZnaczenie.Text.Trim();
