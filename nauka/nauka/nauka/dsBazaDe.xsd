@@ -9,21 +9,25 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="dsBazaDe" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="dsBazaDe" msprop:Generator_DataSetName="dsBazaDe">
+  <xs:element name="dsBazaDe" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBazaDe" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsBazaDe">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="TDe" msprop:Generator_RowEvHandlerName="TDeRowChangeEventHandler" msprop:Generator_RowDeletedName="TDeRowDeleted" msprop:Generator_RowDeletingName="TDeRowDeleting" msprop:Generator_RowEvArgName="TDeRowChangeEvent" msprop:Generator_TablePropName="TDe" msprop:Generator_RowChangedName="TDeRowChanged" msprop:Generator_RowChangingName="TDeRowChanging" msprop:Generator_TableClassName="TDeDataTable" msprop:Generator_RowClassName="TDeRow" msprop:Generator_TableVarName="tableTDe" msprop:Generator_UserTableName="TDe">
+        <xs:element name="TDe" msprop:Generator_RowClassName="TDeRow" msprop:Generator_RowEvHandlerName="TDeRowChangeEventHandler" msprop:Generator_RowDeletedName="TDeRowDeleted" msprop:Generator_RowDeletingName="TDeRowDeleting" msprop:Generator_RowEvArgName="TDeRowChangeEvent" msprop:Generator_TablePropName="TDe" msprop:Generator_RowChangedName="TDeRowChanged" msprop:Generator_UserTableName="TDe" msprop:Generator_RowChangingName="TDeRowChanging" msprop:Generator_TableClassName="TDeDataTable" msprop:Generator_TableVarName="tableTDe">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="wyraz" msprop:Generator_ColumnPropNameInRow="wyraz" msprop:Generator_ColumnPropNameInTable="wyrazColumn" msprop:Generator_ColumnVarNameInTable="columnwyraz" msprop:Generator_UserColumnName="wyraz" type="xs:string" minOccurs="0" />
-              <xs:element name="znaczenie" msprop:Generator_ColumnPropNameInRow="znaczenie" msprop:Generator_ColumnPropNameInTable="znaczenieColumn" msprop:Generator_ColumnVarNameInTable="columnznaczenie" msprop:Generator_UserColumnName="znaczenie" type="xs:string" minOccurs="0" />
-              <xs:element name="rodzajnik" msprop:Generator_ColumnPropNameInRow="rodzajnik" msprop:Generator_ColumnPropNameInTable="rodzajnikColumn" msprop:Generator_ColumnVarNameInTable="columnrodzajnik" msprop:Generator_UserColumnName="rodzajnik" type="xs:string" minOccurs="0" />
-              <xs:element name="zaimek" msprop:Generator_ColumnPropNameInRow="zaimek" msprop:Generator_ColumnPropNameInTable="zaimekColumn" msprop:Generator_ColumnVarNameInTable="columnzaimek" msprop:Generator_UserColumnName="zaimek" type="xs:string" minOccurs="0" />
-              <xs:element name="przypadek" msprop:Generator_ColumnPropNameInRow="przypadek" msprop:Generator_ColumnPropNameInTable="przypadekColumn" msprop:Generator_ColumnVarNameInTable="columnprzypadek" msprop:Generator_UserColumnName="przypadek" type="xs:string" minOccurs="0" />
+              <xs:element name="wyraz" msprop:Generator_UserColumnName="wyraz" msprop:Generator_ColumnPropNameInTable="wyrazColumn" msprop:Generator_ColumnPropNameInRow="wyraz" msprop:Generator_ColumnVarNameInTable="columnwyraz" type="xs:string" />
+              <xs:element name="znaczenie" msprop:Generator_UserColumnName="znaczenie" msprop:Generator_ColumnPropNameInTable="znaczenieColumn" msprop:Generator_ColumnPropNameInRow="znaczenie" msprop:Generator_ColumnVarNameInTable="columnznaczenie" type="xs:string" minOccurs="0" />
+              <xs:element name="rodzajnik" msprop:Generator_UserColumnName="rodzajnik" msprop:Generator_ColumnPropNameInTable="rodzajnikColumn" msprop:Generator_ColumnPropNameInRow="rodzajnik" msprop:Generator_ColumnVarNameInTable="columnrodzajnik" type="xs:string" minOccurs="0" />
+              <xs:element name="zaimek" msprop:Generator_UserColumnName="zaimek" msprop:Generator_ColumnPropNameInTable="zaimekColumn" msprop:Generator_ColumnPropNameInRow="zaimek" msprop:Generator_ColumnVarNameInTable="columnzaimek" type="xs:string" minOccurs="0" />
+              <xs:element name="przypadek" msprop:Generator_UserColumnName="przypadek" msprop:Generator_ColumnPropNameInTable="przypadekColumn" msprop:Generator_ColumnPropNameInRow="przypadek" msprop:Generator_ColumnVarNameInTable="columnprzypadek" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:choice>
     </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TDe" />
+      <xs:field xpath="mstns:wyraz" />
+    </xs:unique>
   </xs:element>
 </xs:schema>

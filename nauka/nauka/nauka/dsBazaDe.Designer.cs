@@ -418,6 +418,13 @@ namespace nauka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TDeRow FindBywyraz(string wyraz) {
+                return ((TDeRow)(this.Rows.Find(new object[] {
+                            wyraz})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 TDeDataTable cln = ((TDeDataTable)(base.Clone()));
                 cln.InitVars();
@@ -453,6 +460,10 @@ namespace nauka {
                 base.Columns.Add(this.columnzaimek);
                 this.columnprzypadek = new global::System.Data.DataColumn("przypadek", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnprzypadek);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnwyraz}, true));
+                this.columnwyraz.AllowDBNull = false;
+                this.columnwyraz.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -597,12 +608,7 @@ namespace nauka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string wyraz {
                 get {
-                    try {
-                        return ((string)(this[this.tableTDe.wyrazColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'wyraz\' w tabeli \'TDe\' to DBNull.", e);
-                    }
+                    return ((string)(this[this.tableTDe.wyrazColumn]));
                 }
                 set {
                     this[this.tableTDe.wyrazColumn] = value;
@@ -671,18 +677,6 @@ namespace nauka {
                 set {
                     this[this.tableTDe.przypadekColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IswyrazNull() {
-                return this.IsNull(this.tableTDe.wyrazColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetwyrazNull() {
-                this[this.tableTDe.wyrazColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
