@@ -63,7 +63,7 @@ namespace slownik
                 {
                     DataRowView drV = (DataRowView)lbSlowaWY.SelectedItem;
 
-                    if (typ_zrodla == 0)
+                    if (typ_zrodla == 0) //slownik ang
                     {
                         if (dsBazaEn1.TEn.Rows.Find(drV.Row[0]) == null)
                         {
@@ -82,7 +82,7 @@ namespace slownik
                         }
                     }
                     else
-                    if (typ_zrodla == 1)
+                    if (typ_zrodla == 1) //slownik niemiecki
                     {
                         if (dsBazaDe1.TDe.Rows.Find(drV.Row[0]) == null)
                         {
