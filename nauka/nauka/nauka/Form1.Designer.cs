@@ -389,7 +389,9 @@
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
             Margin = new Padding(5);
             MaximizeBox = false;
+            MaximumSize = new Size(1312, 574);
             MinimizeBox = false;
+            MinimumSize = new Size(1312, 574);
             Name = "oknoGlowne";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ucz się słówek";

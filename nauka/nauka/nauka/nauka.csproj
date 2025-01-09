@@ -6,6 +6,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Title>Nauka słówek - język angielski i niemiecki</Title>
+    <Company>Tomasz Izydorczyk</Company>
+    <Product>Słownik języka anigielskiego i niemieckiego</Product>
+    <Copyright>Tomasz Izydorczyk</Copyright>
+    <NeutralLanguage>pl</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
