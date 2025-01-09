@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="yes"?>
+<dsBaza xmlns="http://tempuri.org/dsBaza.xsd">
+  <TKategorie>
+    <kategoria>INNE</kategoria>
+  </TKategorie>
+</dsBaza>
