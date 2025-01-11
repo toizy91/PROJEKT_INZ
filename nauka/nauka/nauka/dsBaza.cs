@@ -2,6 +2,14 @@
 {
 }
 
+namespace nauka
+{
+}
+
+namespace nauka
+{
+}
+
 namespace slownik
 {
 }

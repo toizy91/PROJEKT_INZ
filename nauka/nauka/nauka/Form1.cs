@@ -82,7 +82,6 @@ namespace nauka
                 przypadek = drV.Row[4].ToString();
                 poprOdp = drV.Row[0].ToString();
                 poprOdp.Trim();
-                MessageBox.Show(poprOdp);
                 txtPytTres.Text = wyraz;
                 txtOdp.Clear();
                 pytanieZ++;
@@ -187,7 +186,6 @@ namespace nauka
                 przypadek = drV.Row[4].ToString();
                 poprOdp = drV.Row[0].ToString();
                 poprOdp.Trim();
-                MessageBox.Show(poprOdp);
                 poprOdpLicz = 0;
                 wszystkiePytania = System.Convert.ToInt32(lbSlowa.Items.Count);
                 krok = Math.Round(100 / wszystkiePytania, 2);

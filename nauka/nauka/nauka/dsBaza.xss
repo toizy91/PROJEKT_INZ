@@ -7,15 +7,15 @@
 <DiagramLayout xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ex:showrelationlabel="False" ViewPortX="0" ViewPortY="18" xmlns:ex="urn:schemas-microsoft-com:xml-msdatasource-layout-extended" xmlns="urn:schemas-microsoft-com:xml-msdatasource-layout">
   <Shapes>
     <Shape ID="DesignTable:TEn" ZOrder="5" X="89" Y="215" Height="125" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
-    <Shape ID="DesignTable:TKategorie" ZOrder="4" X="417" Y="108" Height="56" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="52" />
-    <Shape ID="DesignTable:TDe" ZOrder="2" X="195" Y="362" Height="254" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="250" />
+    <Shape ID="DesignTable:TKategorie" ZOrder="4" X="417" Y="108" Height="65" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="61" />
+    <Shape ID="DesignTable:TDe" ZOrder="2" X="639" Y="224" Height="254" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="250" />
   </Shapes>
   <Connectors>
     <Connector ID="DesignRelation:TKategorie_TEn" ZOrder="3" LineWidth="11">
       <RoutePoints>
         <Point>
           <X>434</X>
-          <Y>164</Y>
+          <Y>173</Y>
         </Point>
         <Point>
           <X>434</X>
@@ -30,16 +30,16 @@
     <Connector ID="DesignRelation:TKategorie_TDe" ZOrder="1" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>442</X>
-          <Y>164</Y>
+          <X>550</X>
+          <Y>173</Y>
         </Point>
         <Point>
-          <X>442</X>
-          <Y>379</Y>
+          <X>550</X>
+          <Y>241</Y>
         </Point>
         <Point>
-          <X>345</X>
-          <Y>379</Y>
+          <X>639</X>
+          <Y>241</Y>
         </Point>
       </RoutePoints>
     </Connector>
