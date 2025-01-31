@@ -55,7 +55,7 @@
             panel1.Controls.Add(txtNowaKategoria);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(15, 15);
-            panel1.Margin = new Padding(4, 4, 4, 4);
+            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
             panel1.Size = new Size(688, 180);
             panel1.TabIndex = 0;
@@ -64,7 +64,7 @@
             // 
             button1.ForeColor = Color.Blue;
             button1.Location = new Point(548, 121);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(118, 36);
             button1.TabIndex = 6;
@@ -77,7 +77,7 @@
             btnDodajKategorie.BackColor = Color.White;
             btnDodajKategorie.ForeColor = Color.FromArgb(0, 192, 0);
             btnDodajKategorie.Location = new Point(472, 19);
-            btnDodajKategorie.Margin = new Padding(4, 4, 4, 4);
+            btnDodajKategorie.Margin = new Padding(4);
             btnDodajKategorie.Name = "btnDodajKategorie";
             btnDodajKategorie.Size = new Size(192, 36);
             btnDodajKategorie.TabIndex = 5;
@@ -89,7 +89,7 @@
             // 
             btnUsunKategorie.ForeColor = Color.Red;
             btnUsunKategorie.Location = new Point(472, 62);
-            btnUsunKategorie.Margin = new Padding(4, 4, 4, 4);
+            btnUsunKategorie.Margin = new Padding(4);
             btnUsunKategorie.Name = "btnUsunKategorie";
             btnUsunKategorie.Size = new Size(192, 36);
             btnUsunKategorie.TabIndex = 4;
@@ -101,9 +101,10 @@
             // 
             cbKategorie.DataSource = dsBaza1;
             cbKategorie.DisplayMember = "TKategorie.kategoria";
+            cbKategorie.DropDownStyle = ComboBoxStyle.DropDownList;
             cbKategorie.FormattingEnabled = true;
             cbKategorie.Location = new Point(208, 62);
-            cbKategorie.Margin = new Padding(4, 4, 4, 4);
+            cbKategorie.Margin = new Padding(4);
             cbKategorie.Name = "cbKategorie";
             cbKategorie.Size = new Size(256, 33);
             cbKategorie.TabIndex = 3;
@@ -127,7 +128,7 @@
             // txtNowaKategoria
             // 
             txtNowaKategoria.Location = new Point(176, 16);
-            txtNowaKategoria.Margin = new Padding(4, 4, 4, 4);
+            txtNowaKategoria.Margin = new Padding(4);
             txtNowaKategoria.Name = "txtNowaKategoria";
             txtNowaKategoria.Size = new Size(288, 31);
             txtNowaKategoria.TabIndex = 1;
@@ -156,7 +157,7 @@
             ClientSize = new Size(715, 209);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             MaximizeBox = false;
             MaximumSize = new Size(737, 265);
             MinimizeBox = false;

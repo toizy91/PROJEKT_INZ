@@ -100,8 +100,6 @@ namespace slownik
 
         private void btnDodajSlowo_Click(object sender, EventArgs e)
         {
-            
-
             try
             {
                 if (dsBaza1.TDe.Rows.Find(txtWyraz.Text.Trim()) == null)
@@ -131,7 +129,7 @@ namespace slownik
                 }
                 else
                 {
-                    MessageBox.Show(this, "Podane słowo już istnieje w bazie!", "Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(this, "Podane słowo już istnieje w bazie!", "Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtWyraz.Clear();
                     txtZnaczenie.Clear();
                 }

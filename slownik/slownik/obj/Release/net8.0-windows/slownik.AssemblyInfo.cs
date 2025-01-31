@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Wszelkie prawa zastrzeżone")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+493781b35e5cac73c2d21a7a5c617ba719d83f5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+996ef249eaaaa97b19158f7a0fdbd5a9eed4ac45")]
 [assembly: System.Reflection.AssemblyProductAttribute("Słownik języka angielskiego i niemieckiego")]
 [assembly: System.Reflection.AssemblyTitleAttribute("slownik")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

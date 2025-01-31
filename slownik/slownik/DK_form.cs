@@ -61,11 +61,19 @@ namespace slownik
             DataRowView drv = (DataRowView)cbKategorie.SelectedItem;
             if (drv != null)
             {
-                if (MessageBox.Show(this, "Czy na pewno chcesz usunąć wybraną kategorię?", "Kategorie", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (drv.Row[0].ToString() != "INNE")
                 {
-                    drv.Delete();
-                    dsBaza1.WriteXml("kategorie.xml");
-                    MessageBox.Show(this, "Pomyślnie usunięto kategorię!", "Kategorie", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    if (MessageBox.Show(this, "Czy na pewno chcesz usunąć wybraną kategorię?", "Kategorie", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        drv.Delete();
+                        dsBaza1.WriteXml("kategorie.xml");
+                        MessageBox.Show(this, "Pomyślnie usunięto kategorię!", "Kategorie", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(this, "Nie można usunąć kategorii domyślnej!", "Kategorie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
@@ -86,7 +94,7 @@ namespace slownik
             }else
             {
                 btnUsunKategorie.Enabled=!false;
-            }
+            }            
         }
 
     }

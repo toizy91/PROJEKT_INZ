@@ -208,5 +208,10 @@ namespace slownik
             nakaForm f = new nakaForm();
             f.ShowDialog();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            tsElemeNaList.Text = "Elementów: " + lbSlowa.Items.Count.ToString();
+        }
     }
 }

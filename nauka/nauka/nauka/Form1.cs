@@ -171,7 +171,7 @@ namespace nauka
         {
             labPyttz.Text = pytanieZ.ToString() + " z " + wszystkiePytania.ToString();
             labPoprOdp.Text = poprOdpLicz.ToString();
-            labProcUkon.Text = procUkon.ToString() + "%";
+            labProcUkon.Text = Math.Round(procUkon,0).ToString() + "%";
         }
 
         private void btnStartDe_Click(object sender, EventArgs e)

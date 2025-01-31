@@ -7,7 +7,7 @@
     <authors>Tomasz Izydorczyk</authors>
     <description>Package Description</description>
     <copyright>Wszelkie prawa zastrzeżone</copyright>
-    <repository type="git" commit="493781b35e5cac73c2d21a7a5c617ba719d83f5a" />
+    <repository type="git" commit="996ef249eaaaa97b19158f7a0fdbd5a9eed4ac45" />
     <dependencies>
       <group targetFramework="net8.0-windows7.0" />
     </dependencies>

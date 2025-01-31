@@ -45,7 +45,7 @@ namespace slownik
             }
             else
             {
-                MessageBox.Show(this, "Podane słowo już istnieje w bazie!", "Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, "Podane słowo już istnieje w bazie!", "Dodaj słowo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

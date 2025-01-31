@@ -1,6 +1,423 @@
 <?xml version="1.0" standalone="yes"?>
 <dsBaza xmlns="http://tempuri.org/dsBaza.xsd">
+  <TEn>
+    <wyraz>abacus</wyraz>
+    <znaczenie>liczydło</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>abbey</wyraz>
+    <znaczenie>opactwo</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>abduct</wyraz>
+    <znaczenie>uprowadzać</znaczenie>
+    <typ>czasownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>aberrant</wyraz>
+    <znaczenie>nienormalny, niezdrowy</znaczenie>
+    <typ>przymiotnik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>bone to pick</wyraz>
+    <znaczenie>porachunki</znaczenie>
+    <typ>zwrot</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>boreal</wyraz>
+    <znaczenie>północny</znaczenie>
+    <typ>przymiotnik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>bottle</wyraz>
+    <znaczenie>butelka, flakonik</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>boy</wyraz>
+    <znaczenie>chłopak</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>January</wyraz>
+    <znaczenie>styczeń</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>February</wyraz>
+    <znaczenie>luty</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>Mach</wyraz>
+    <znaczenie>marzec</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>April</wyraz>
+    <znaczenie>kwiecień</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>May</wyraz>
+    <znaczenie>maj</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>June</wyraz>
+    <znaczenie>czerwiec</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>July</wyraz>
+    <znaczenie>lipiec</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>August</wyraz>
+    <znaczenie>sierpień</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>September</wyraz>
+    <znaczenie>wrzesień</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>October</wyraz>
+    <znaczenie>październik</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>November</wyraz>
+    <znaczenie>listopad</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>December</wyraz>
+    <znaczenie>grudzień</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>spring</wyraz>
+    <znaczenie>wiosna</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>summer</wyraz>
+    <znaczenie>lato</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>autumm</wyraz>
+    <znaczenie>jesień</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
+  <TEn>
+    <wyraz>winter</wyraz>
+    <znaczenie>zima</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+  </TEn>
   <TKategorie>
     <kategoria>INNE</kategoria>
   </TKategorie>
+  <TKategorie>
+    <kategoria>czas</kategoria>
+  </TKategorie>
+  <TDe>
+    <wyraz>bestehen</wyraz>
+    <znaczenie>składać się z</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>aus</zaimek>
+    <przypadek>Dat.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>folgen</wyraz>
+    <znaczenie>wynikać z</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>aus</zaimek>
+    <przypadek>Dat.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>stammen</wyraz>
+    <znaczenie>pochodzić/wywodzić się z</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>aus</zaimek>
+    <przypadek>Dat.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>anrufen</wyraz>
+    <znaczenie>telefonować do</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>bei</zaimek>
+    <przypadek>Dat.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>bleiben</wyraz>
+    <znaczenie>pozostać przy</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>bei</zaimek>
+    <przypadek>Dat.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>helfen</wyraz>
+    <znaczenie>pomagać w/przy</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>bei</zaimek>
+    <przypadek>Dat.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>ausgeben</wyraz>
+    <znaczenie>wydawać pieniądze na</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>für</zaimek>
+    <przypadek>Akk.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>danken</wyraz>
+    <znaczenie>dziękować za</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>für</zaimek>
+    <przypadek>Akk.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>halten</wyraz>
+    <znaczenie>uważać za</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>für</zaimek>
+    <przypadek>Akk.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>achten</wyraz>
+    <znaczenie>uważać na</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>auf</zaimek>
+    <przypadek>Akk.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>ankommen</wyraz>
+    <znaczenie>zależeć od</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>auf</zaimek>
+    <przypadek>Akk.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>hoffen</wyraz>
+    <znaczenie>mieć nadzieję na</znaczenie>
+    <typ>rekcja czasownika</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek>auf</zaimek>
+    <przypadek>Akk.</przypadek>
+  </TDe>
+  <TDe>
+    <wyraz>Januar</wyraz>
+    <znaczenie>styczeń</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Februar</wyraz>
+    <znaczenie>luty</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>März</wyraz>
+    <znaczenie>marzec</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>April</wyraz>
+    <znaczenie>kwiecień</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Mai</wyraz>
+    <znaczenie>maj</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Juni</wyraz>
+    <znaczenie>czerrwiec</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Juli</wyraz>
+    <znaczenie>lipiec</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>August</wyraz>
+    <znaczenie>sierpień</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>September</wyraz>
+    <znaczenie>wrzesień</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Oktober</wyraz>
+    <znaczenie>październik</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik />
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Oma</wyraz>
+    <znaczenie>babcia</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik>die</rodzajnik>
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Tante</wyraz>
+    <znaczenie>ciotka</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik>die</rodzajnik>
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Schwester</wyraz>
+    <znaczenie>siostra</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>INNE</kategoria>
+    <rodzajnik>die</rodzajnik>
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Sekunde</wyraz>
+    <znaczenie>sekunda</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>czas</kategoria>
+    <rodzajnik>die</rodzajnik>
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Minute</wyraz>
+    <znaczenie>minuta</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>czas</kategoria>
+    <rodzajnik>die</rodzajnik>
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Stunde</wyraz>
+    <znaczenie>godzina</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>czas</kategoria>
+    <rodzajnik>die</rodzajnik>
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Viertelstunde</wyraz>
+    <znaczenie>kwadrans</znaczenie>
+    <typ>rzeczownik</typ>
+    <kategoria>czas</kategoria>
+    <rodzajnik>die</rodzajnik>
+    <zaimek />
+    <przypadek />
+  </TDe>
+  <TDe>
+    <wyraz>Um wie viel Uhr?</wyraz>
+    <znaczenie>O której godzinie?</znaczenie>
+    <typ>zwrot</typ>
+    <kategoria>czas</kategoria>
+    <rodzajnik>die</rodzajnik>
+    <zaimek />
+    <przypadek />
+  </TDe>
 </dsBaza>

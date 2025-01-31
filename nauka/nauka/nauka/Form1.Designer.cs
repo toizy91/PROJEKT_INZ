@@ -109,7 +109,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.Control;
+            label1.BackColor = Color.Yellow;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
             label1.ForeColor = Color.Blue;
             label1.Location = new Point(505, 53);
@@ -132,7 +132,7 @@
             // 
             // txtOdp
             // 
-            txtOdp.BackColor = SystemColors.Control;
+            txtOdp.BackColor = Color.White;
             txtOdp.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
             txtOdp.ForeColor = Color.FromArgb(64, 0, 64);
             txtOdp.Location = new Point(236, 239);
@@ -191,7 +191,7 @@
             // 
             labPoprOdp.AutoSize = true;
             labPoprOdp.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            labPoprOdp.ForeColor = Color.Yellow;
+            labPoprOdp.ForeColor = Color.Blue;
             labPoprOdp.Location = new Point(383, 33);
             labPoprOdp.Name = "labPoprOdp";
             labPoprOdp.Size = new Size(58, 48);
@@ -202,7 +202,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            label7.ForeColor = Color.Yellow;
+            label7.ForeColor = Color.Blue;
             label7.Location = new Point(17, 33);
             label7.Name = "label7";
             label7.Size = new Size(379, 48);
@@ -244,10 +244,10 @@
             // 
             // txtPytTres
             // 
-            txtPytTres.BackColor = SystemColors.Control;
+            txtPytTres.BackColor = Color.Yellow;
             txtPytTres.BorderStyle = BorderStyle.None;
             txtPytTres.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            txtPytTres.ForeColor = Color.FromArgb(64, 0, 64);
+            txtPytTres.ForeColor = Color.FromArgb(192, 0, 192);
             txtPytTres.Location = new Point(150, 114);
             txtPytTres.Name = "txtPytTres";
             txtPytTres.ReadOnly = true;
@@ -282,7 +282,7 @@
             // 
             // cbRodzajnik
             // 
-            cbRodzajnik.BackColor = SystemColors.Control;
+            cbRodzajnik.BackColor = Color.LightGreen;
             cbRodzajnik.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
             cbRodzajnik.FormattingEnabled = true;
             cbRodzajnik.Items.AddRange(new object[] { "", "der", "die", "das" });
@@ -293,7 +293,7 @@
             // 
             // cbZaimek
             // 
-            cbZaimek.BackColor = SystemColors.Control;
+            cbZaimek.BackColor = Color.LightGreen;
             cbZaimek.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
             cbZaimek.FormattingEnabled = true;
             cbZaimek.Items.AddRange(new object[] { "", "an", "auf", "aus", "bei", "für", "gegen", "in", "mit", "nach", "von", "unter", "über", "um", "vor", "zu" });
@@ -304,7 +304,7 @@
             // 
             // cbPrzypadek
             // 
-            cbPrzypadek.BackColor = SystemColors.Control;
+            cbPrzypadek.BackColor = Color.LightGreen;
             cbPrzypadek.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
             cbPrzypadek.FormattingEnabled = true;
             cbPrzypadek.Items.AddRange(new object[] { "", "Nom.", "Gen.", "Dat.", "Akk." });
@@ -315,7 +315,7 @@
             // 
             // statusStrip1
             // 
-            statusStrip1.BackColor = SystemColors.Control;
+            statusStrip1.BackColor = Color.White;
             statusStrip1.ImageScalingSize = new Size(24, 24);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabel2, toolStripStatusLabel3, toolStripStatusLabel4, toolStripStatusLabel5, toolStripStatusLabel6, toolStripStatusLabel7 });
             statusStrip1.Location = new Point(0, 486);
@@ -370,7 +370,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
+            BackColor = Color.Yellow;
             ClientSize = new Size(1290, 518);
             Controls.Add(statusStrip1);
             Controls.Add(cbPrzypadek);

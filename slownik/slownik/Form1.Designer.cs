@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             dsBaza1 = new dsBaza();
             panel1 = new Panel();
             txtWyszukaj = new TextBox();
@@ -43,13 +44,14 @@
             rbPlEn = new RadioButton();
             rbEnPl = new RadioButton();
             statusStrip1 = new StatusStrip();
-            toolStripStatusLabel5 = new ToolStripStatusLabel();
+            tsElemeNaList = new ToolStripStatusLabel();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripStatusLabel2 = new ToolStripStatusLabel();
             toolStripStatusLabel3 = new ToolStripStatusLabel();
             toolStripStatusLabel4 = new ToolStripStatusLabel();
             panel5 = new Panel();
             rtxOpis = new RichTextBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)dsBaza1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -228,7 +230,7 @@
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
-            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel5, toolStripStatusLabel1, toolStripStatusLabel2, toolStripStatusLabel3, toolStripStatusLabel4 });
+            statusStrip1.Items.AddRange(new ToolStripItem[] { tsElemeNaList, toolStripStatusLabel1, toolStripStatusLabel2, toolStripStatusLabel3, toolStripStatusLabel4 });
             statusStrip1.Location = new Point(0, 1002);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Padding = new Padding(1, 0, 18, 0);
@@ -236,13 +238,13 @@
             statusStrip1.TabIndex = 5;
             statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel5
+            // tsElemeNaList
             // 
-            toolStripStatusLabel5.BackColor = Color.White;
-            toolStripStatusLabel5.BorderSides = ToolStripStatusLabelBorderSides.Right;
-            toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            toolStripStatusLabel5.Size = new Size(188, 29);
-            toolStripStatusLabel5.Text = "Elementów na liście: 0";
+            tsElemeNaList.BackColor = Color.White;
+            tsElemeNaList.BorderSides = ToolStripStatusLabelBorderSides.Right;
+            tsElemeNaList.Name = "tsElemeNaList";
+            tsElemeNaList.Size = new Size(188, 29);
+            tsElemeNaList.Text = "Elementów na liście: 0";
             // 
             // toolStripStatusLabel1
             // 
@@ -286,10 +288,10 @@
             // 
             // rtxOpis
             // 
-            rtxOpis.BackColor = Color.FromArgb(192, 192, 255);
+            rtxOpis.BackColor = Color.White;
             rtxOpis.BorderStyle = BorderStyle.None;
             rtxOpis.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            rtxOpis.ForeColor = Color.Red;
+            rtxOpis.ForeColor = Color.FromArgb(192, 0, 192);
             rtxOpis.Location = new Point(20, 22);
             rtxOpis.Margin = new Padding(4);
             rtxOpis.Name = "rtxOpis";
@@ -297,6 +299,11 @@
             rtxOpis.Size = new Size(400, 225);
             rtxOpis.TabIndex = 7;
             rtxOpis.Text = "";
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
             // 
             // okno_glowne
             // 
@@ -351,9 +358,10 @@
         private ToolStripStatusLabel toolStripStatusLabel2;
         private ToolStripStatusLabel toolStripStatusLabel3;
         private ToolStripStatusLabel toolStripStatusLabel4;
-        private ToolStripStatusLabel toolStripStatusLabel5;
+        private ToolStripStatusLabel tsElemeNaList;
         private Panel panel5;
         private RichTextBox rtxOpis;
         private Button btnNauka;
+        private System.Windows.Forms.Timer timer1;
     }
 }

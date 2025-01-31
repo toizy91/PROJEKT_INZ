@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<dsBazaEn xmlns="http://tempuri.org/dsBazaEn.xsd">
+  <TEn>
+    <wyraz>September</wyraz>
+    <znaczenie>wrzesień</znaczenie>
+  </TEn>
+  <TEn>
+    <wyraz>July</wyraz>
+    <znaczenie>lipiec</znaczenie>
+  </TEn>
+  <TEn>
+    <wyraz>December</wyraz>
+    <znaczenie>grudzień</znaczenie>
+  </TEn>
+</dsBazaEn>
